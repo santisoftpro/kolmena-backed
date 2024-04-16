@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(isset($_SESSION['user'])){
+    header("Location: dashboard.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,8 +29,8 @@
 
 <div class="main-wrapper">
 <div class="account-content">
+<form method="post" id="login-form">
 <div class="login-wrapper">
-    <form action="">
 <div class="login-content">
 <div class="login-userset">
 <div class="login-logo">
@@ -31,13 +38,14 @@
 </div>
 <div class="login-userheading">
 <h3>Sign In</h3>
+<div id="loginAlert"></div>
 <h4>Please login to your account</h4>
 </div>
 
 <div class="form-login">
 <label>Email</label>
 <div class="form-addons">
-<input type="text" placeholder="Enter your email address">
+<input type="text" name="email" placeholder="Enter your email address">
 <img src="assets/img/icons/mail.svg" alt="img">
 </div>
 </div>
@@ -54,7 +62,7 @@
 </div>
 </div>
 <div class="form-login">
-<a class="btn btn-login" href="index.php">Sign In</a>
+<button id="login-btn" class="btn btn-login">Sign In</button>
 </div>
 <div class="signinform text-center">
 <h4>Don’t have an account? <a href="signup.php" class="hover-a">Sign Up</a></h4>
@@ -80,11 +88,12 @@ Sign Up using Facebook
 </div>
 </div>
 </div>
-</form>
+
 <div class="login-img">
 <img src="assets/img/login.jpg" alt="img">
 </div>
 </div>
+</form>
 </div>
 </div>
 
@@ -96,5 +105,6 @@ Sign Up using Facebook
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 <script src="assets/js/script.js"></script>
+<script src="assets/js/dynamic/user.js"></script>
 </body>
 </html>

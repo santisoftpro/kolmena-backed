@@ -19,9 +19,11 @@ $(document).ready(function () {
                     data: $("#register-form").serialize()+'&action=register',
                     success: function (response) {
                         $("#register-btn").val('sign up');
+                        window.location = 'dashboard.php';
                         if(response === 'register'){
-                            window.location = './dashboard.php';
+                            console.log(response);
                         }
+                     
                         else {
                             $("#regAlert").html(response);
                         }
@@ -29,5 +31,30 @@ $(document).ready(function () {
                 });
             }
         }
+    });
+// login function
+    $("#login-btn").click(function (e) { 
+        if($("#login-form")[0].checkValidity()){
+        e.preventDefault();
+        $("#login-btn").val('Please wait..');
+        $.ajax({
+            url: "./assets/php/action.php",
+            method: "post",
+            data: $("#login-form").serialize()+'&action=login',
+            success: function (response) {
+                    // console.log(response);
+                    window.location = 'dashboard.php';
+                    if(response === 'login') 
+                    {
+                        window.location = 'dashboard.php';
+                    }
+                    
+                    else{
+                        $("#loginAlert").html(response);
+                    }
+            }
+        });
+        }
+        
     });
 });

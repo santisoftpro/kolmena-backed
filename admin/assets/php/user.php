@@ -21,4 +21,23 @@ class User extends Database {
         return $result;
     }
 
+    // logu existing user
+    public function login($email)
+        {
+            $sql = "SELECT email,password FROM user WHERE email=:email AND deleted !=0";
+            $stmt = $this->conn->prepare($sql);
+            $stmt->execute(["email"=>$email]);
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            return $row;
+        }
+    // curreny user in session
+    public function currentUser($email)
+    {
+        $sql = "SELECT * FROM user WHERE email = :email";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute(["email"=>$email]);
+        $row = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $row;
+    }
 }

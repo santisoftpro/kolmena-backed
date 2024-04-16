@@ -71,7 +71,7 @@
 <img alt="" src="assets/img/profiles/avatar-02.jpg">
 </span>
 <div class="media-body flex-grow-1">
-<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
+<p class="noti-details"><span class="noti-title"></span> added new task <span class="noti-title">Patient appointment booking</span></p>
 <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
 </div>
 </div>
@@ -148,7 +148,7 @@
 <span class="user-img"><img src="assets/img/profiles/avator1.jpg" alt="">
 <span class="status online"></span></span>
 <div class="profilesets">
-<h6>John Doe</h6>
+<h6><?php echo $_SESSION['user']; ?></h6>
 <h5>Admin</h5>
 </div>
 </div>
@@ -156,7 +156,7 @@
 <a class="dropdown-item" href="profile.php"> <i class="me-2" data-feather="user"></i> My Profile</a>
 <a class="dropdown-item" href="generalsettings.html"><i class="me-2" data-feather="settings"></i>Settings</a>
 <hr class="m-0">
-<a class="dropdown-item logout pb-0" href="signin.html"><img src="assets/img/icons/log-out.svg" class="me-2" alt="img">Logout</a>
+<a class="dropdown-item logout pb-0" href='./assets/php/logout.php'><img src="assets/img/icons/log-out.svg" class="me-2" alt="img">Logout</a>
 </div>
 </div>
 </li>
