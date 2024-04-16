@@ -23,6 +23,7 @@
 <div class="main-wrapper">
 <div class="account-content">
 <div class="login-wrapper">
+    <form action="">
 <div class="login-content">
 <div class="login-userset">
 <div class="login-logo">
@@ -32,6 +33,7 @@
 <h3>Sign In</h3>
 <h4>Please login to your account</h4>
 </div>
+
 <div class="form-login">
 <label>Email</label>
 <div class="form-addons">
@@ -42,7 +44,7 @@
 <div class="form-login">
 <label>Password</label>
 <div class="pass-group">
-<input type="password" class="pass-input" placeholder="Enter your password">
+<input type="password" class="pass-input" name="password" id="password" placeholder="Enter your password">
 <span class="fas toggle-password fa-eye-slash"></span>
 </div>
 </div>
@@ -52,10 +54,10 @@
 </div>
 </div>
 <div class="form-login">
-<a class="btn btn-login" href="index.html">Sign In</a>
+<a class="btn btn-login" href="index.php">Sign In</a>
 </div>
 <div class="signinform text-center">
-<h4>Don’t have an account? <a href="signup.html" class="hover-a">Sign Up</a></h4>
+<h4>Don’t have an account? <a href="signup.php" class="hover-a">Sign Up</a></h4>
 </div>
 <div class="form-setlogin">
 <h4>Or sign up with</h4>
@@ -78,6 +80,7 @@ Sign Up using Facebook
 </div>
 </div>
 </div>
+</form>
 <div class="login-img">
 <img src="assets/img/login.jpg" alt="img">
 </div>

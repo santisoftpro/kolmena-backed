@@ -20,13 +20,13 @@ class Database {
 // check inputes
 public function test_input($data)
 {
-    $data = trim($data);
-    $data = stripcslashes($data);
-    $data = htmlspecialchars($data);
-
-return $data;
+    if (!is_null($data) && is_string($data)) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+    }
+    return $data;
 }
-
 // check Error message alert
 
 public function showMessage($type, $message)

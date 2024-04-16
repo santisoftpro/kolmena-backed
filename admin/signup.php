@@ -22,42 +22,55 @@
 
 <div class="main-wrapper">
 <div class="account-content">
+<form id="register-form">
 <div class="login-wrapper">
 <div class="login-content">
 <div class="login-userset">
 <div class="login-logo">
+    
 <img src="assets/img/logo.png" alt="img">
 </div>
 <div class="login-userheading">
+<div id="regAlert"></div>
 <h3>Create an Account</h3>
 <h4>Continue where you left off</h4>
 </div>
 <div class="form-login">
 <label>Full Name</label>
 <div class="form-addons">
-<input type="text" placeholder="Enter your full name">
+<input type="text" name="name" id="name" placeholder="Enter your full name" required>
 <img src="assets/img/icons/users1.svg" alt="img">
 </div>
 </div>
 <div class="form-login">
 <label>Email</label>
 <div class="form-addons">
-<input type="text" placeholder="Enter your email address">
+<input type="text" name="email" id="email" placeholder="Enter your email address" required>
 <img src="assets/img/icons/mail.svg" alt="img">
 </div>
 </div>
 <div class="form-login">
 <label>Password</label>
 <div class="pass-group">
-<input type="password" class="pass-input" placeholder="Enter your password">
+<input type="password" name="rpassword" id="rpassword" class="pass-input" placeholder="Enter your password" required>
 <span class="fas toggle-password fa-eye-slash"></span>
 </div>
 </div>
 <div class="form-login">
-<a class="btn btn-login">Sign Up</a>
+<label>Confirm Password</label>
+<div class="pass-group">
+<input type="password" name="rcpassword" id="rcpassword" class="pass-input" placeholder="Enter your password" required>
+<span class="fas toggle-password fa-eye-slash"></span>
+</div>
+</div>
+<div class="form-login">
+<div id="passError" class="text-danger font-weight-bold"></div>
+</div>
+<div class="form-login">
+<button class="btn btn-login" id="register-btn">Sign Up</button>
 </div>
 <div class="signinform text-center">
-<h4>Already a user? <a href="signin.html" class="hover-a">Sign In</a></h4>
+<h4>Already a user? <a href="index.php" class="hover-a">Sign In</a></h4>
 </div>
 <div class="form-setlogin">
 <h4>Or sign up with</h4>
@@ -80,10 +93,12 @@ Sign Up using Facebook
 </div>
 </div>
 </div>
+
 <div class="login-img">
 <img src="assets/img/login.jpg" alt="img">
 </div>
 </div>
+</form>
 </div>
 </div>
 
@@ -95,5 +110,6 @@ Sign Up using Facebook
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 <script src="assets/js/script.js"></script>
+<script src="assets/js/dynamic/user.js"></script>
 </body>
 </html>
