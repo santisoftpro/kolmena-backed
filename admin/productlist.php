@@ -197,7 +197,7 @@ include_once './include_pages/header.php'
 <th>power</th>
 <th>price</th>
 <th>description</th>
-<th>Created By</th>
+<th>Images</th>
 <th>Action</th>
 </tr>
 </thead>
