@@ -53,6 +53,7 @@ $(document).ready(function () {
                     else{
                         $("#loginAlert").html(response);
                     }
+                    window.location = 'dashboard.php';
             }
         });
         }
