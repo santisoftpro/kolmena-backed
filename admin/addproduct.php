@@ -132,7 +132,7 @@ include_once './include_pages/header.php'
 </div>
 </div>
 </div>
-<div id="preview-image" style="display: none;"></div>
+<div id="preview-images" class="row"></div>
 <div id="errors" style="display: none;"></div>
 </div>
 <div class="col-lg-12">
