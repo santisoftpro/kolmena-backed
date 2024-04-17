@@ -265,7 +265,7 @@ session_start();
                         $firstImage = reset($images);
                     }
                 ?>
-                    <a href="#">
+                    <a href="product.php?id=<?=$row['product_id']?>">
                         <figure>
                             <div class="image-icons">
                                 <img src="admin/assets/php/uploads/<?=$firstImage?>" />

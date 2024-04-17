@@ -135,45 +135,55 @@
 <section class="bg-white" >
 <!-- view product -->
 
+<?php
+  require_once './admin/mysqli/db.php';
+  $sql = "SELECT * FROM posts WHERE product_id='$_GET[id]'";
+  $result = mysqli_query($conn, $sql);
+  foreach ($result as $row){
+    ?>
+
+ 
 <div class = "card-wrapper">
     <div class = "card">
       <!-- card left -->
       <div class = "product-imgs">
         <div class = "img-display">
           <div class = "img-showcase">
-            <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_64914_www.alibaba.com.jpeg" alt = "shoe image">
-            <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_64938_www.alibaba.com.jpeg" alt = "shoe image">
-            <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_65026_www.alibaba.com.jpeg" alt = "shoe image">
-            <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_6508_www.alibaba.com.jpeg" alt = "shoe image">
+            <?php 
+                foreach(json_decode($row['images']) as $image) {
+                ?>
+                  <img src = "admin/assets/php/uploads/<?=$image; ?>" alt = "shoe image">
+         
+            <?php
+                }
+
+            ?>
+            
           </div>
         </div>
         <div class = "img-select">
+        <?php 
+        $i=1;
+                foreach(json_decode($row['images']) as $image) {
+                ?>
           <div class = "img-item">
-            <a href = "#" data-id = "1">
-              <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_64914_www.alibaba.com.jpeg" alt = "shoe image">
+            <a href = "#" data-id = "<?=$i++;?>">
+              <img src = "admin/assets/php/uploads/<?=$image; ?>" alt = "shoe image" width="200" height="200">
             </a>
           </div>
-          <div class = "img-item">
-            <a href = "#" data-id = "2">
-              <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_64938_www.alibaba.com.jpeg" alt = "shoe image">
-            </a>
-          </div>
-          <div class = "img-item">
-            <a href = "#" data-id = "3">
-              <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_65026_www.alibaba.com.jpeg" alt = "shoe image">
-            </a>
-          </div>
-          <div class = "img-item">
-            <a href = "#" data-id = "4">
-              <img src = "product-image/category/automatic Pump controller/Screenshot_12-4-2024_6508_www.alibaba.com.jpeg" alt = "shoe image">
-            </a>
-          </div>
+        
+         
+            <?php
+                }
+
+            ?>
+         
         </div>
       </div>
       <!-- card right -->
       <div class = "product-content">
-        <h4 class = "product-title">Automatic Pump controller</h4>
-        <a href = "#" class = "product-link">visit nike store</a>
+        <h4 class = "product-title"><?=$row['productName'] ?></h4>
+        <a href = "#" class = "product-link">visit Kolmena Group</a>
         <div class = "product-rating">
           <i class = "fas fa-star"></i>
           <i class = "fas fa-star"></i>
@@ -184,18 +194,16 @@
         </div>
 
         <div class = "product-price">
-          <p class = "last-price">Old Price: <span>$257.00</span></p>
-          <p class = "new-price">New Price: <span>$249.00 (5%)</span></p>
+          <p class = "last-price">Old Price: <span>0</span></p>
+          <p class = "new-price">New Price: <span><?=$row['price']?></span></p>
         </div>
 
         <div class = "product-detail">
           <h2>about this item: </h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+          <p><?=$row['description'] ?></p>
+         
           <ul>
-            <li>Color: <span>Black</span></li>
-            <li>Available: <span>in stock</span></li>
-            <li>Category: <span>Shoes</span></li>
+            <li>Category: <span><?= $row['category'] ?></span></li>
             <li>Shipping Area: <span>All over the world</span></li>
             <li>Shipping Fee: <span>Free</span></li>
           </ul>
@@ -237,7 +245,10 @@
       </div>
     </div>
   </div>
+  <?php
+  }
 
+?>
   </section>
 
 <!--Footer Start-->
