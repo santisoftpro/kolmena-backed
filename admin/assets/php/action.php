@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once './user.php';
-// $user = new User();
+$user = new User();
 // registerinng user
 if(isset($_POST["action"]) && $_POST["action"] == "register")
 {

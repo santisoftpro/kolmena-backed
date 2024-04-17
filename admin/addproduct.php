@@ -1,3 +1,10 @@
+<?php
+session_start();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,22 +94,22 @@ include_once './include_pages/header.php'
 <h6>Create new product</h6>
 </div>
 </div>
-<form enctype="multipart/form-data">
+<form action="assets/php/function.php" method="POST" enctype="multipart/form-data">
 <div class="card">
 <div class="card-body">
 <div class="row">
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
 <label>Product Name</label>
-<input type="text" name="productName">
+<input type="text" name="productName" required>
 </div>
 </div>
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
 <label>Category</label>
-<select class="select" name="category" id="category">
-<option>Choose Category</option>
-<option value="">Computers</option>
+<select class="select" name="category" id="category" required>
+<option value="">Choose Category</option>
+<option value="Computers">Computers</option>
 </select>
 </div>
 </div>
@@ -110,14 +117,19 @@ include_once './include_pages/header.php'
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
 <label>POWER</label>
-<input type="text" name="power" id="power">
+<input type="text" name="power" id="power"required>
 </div>
 </div>
-
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="form-group">
+<label>Price</label>
+<input type="text" name="price" required>
+</div>
+</div>
 <div class="col-lg-12">
 <div class="form-group">
 <label>Description</label>
-<textarea class="form-control"></textarea>
+<textarea class="form-control" name="description" required></textarea>
 </div>
 </div>
 
@@ -125,7 +137,7 @@ include_once './include_pages/header.php'
 <div class="form-group">
 <label> Product Image</label>
 <div class="image-upload">
-<input type="file" name="post-files[]" id="post-files" accept=".jpg, .jpeg, .png" multiple>
+<input type="file" name="postfiles[]" id="post-files" accept=".jpg, .jpeg, .png" multiple required>
 <div class="image-uploads">
 <img src="assets/img/icons/upload.svg" alt="img">
 <h4>Drag and drop a file to upload</h4>
@@ -136,8 +148,8 @@ include_once './include_pages/header.php'
 <div id="errors" style="display: none;"></div>
 </div>
 <div class="col-lg-12">
-<a href="javascript:void(0);" class="btn btn-submit me-2">Submit</a>
-<a href="productlist.html" class="btn btn-cancel">Cancel</a>
+<button type="submit" class="btn btn-submit me-2" name="productInsert">Submit</button>
+<a href="productlist.php" class="btn btn-cancel">Cancel</a>
 </div>
 </div>
 </div>

@@ -19,9 +19,10 @@ $(document).ready(function () {
                     data: $("#register-form").serialize()+'&action=register',
                     success: function (response) {
                         $("#register-btn").val('sign up');
-                        window.location = 'dashboard.php';
+                      
                         if(response === 'register'){
                             console.log(response);
+                            window.location = 'dashboard.php';
                         }
                      
                         else {
@@ -43,7 +44,7 @@ $(document).ready(function () {
             data: $("#login-form").serialize()+'&action=login',
             success: function (response) {
                     // console.log(response);
-                    window.location = 'dashboard.php';
+                  
                     if(response === 'login') 
                     {
                         window.location = 'dashboard.php';
