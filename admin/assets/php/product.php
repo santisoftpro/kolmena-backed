@@ -24,4 +24,19 @@ class Product extends Database {
             return false;
         }
     }
+
+    public function fetchProduct()
+    {
+        try {
+          $sql = "SELECT * FROM posts ORDER BY product_id DESC";
+          $stmt = $this->conn->query($sql);
+          $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+          return $products;
+
+        } catch (PDOException $e) {
+            echo "Database Error: " . $e->getMessage();
+            return false;
+        }
+    }
+
 }

@@ -107,10 +107,7 @@ include_once './include_pages/header.php'
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
 <label>Category</label>
-<select class="select" name="category" id="category" required>
-<option value="">Choose Category</option>
-<option value="Computers">Computers</option>
-</select>
+<input type="text" name="category" id="category">
 </div>
 </div>
 
