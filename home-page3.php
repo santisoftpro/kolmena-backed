@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -251,313 +255,43 @@
             <br>
             <div class="col-md-12">
                 <div class="discovers-grid">
+                <?php
+                  include './admin/mysqli/db.php';
+                  $sql =  "SELECT * FROM posts ORDER BY product_id DESC";
+                  $result = mysqli_query($conn, $sql);
+                  foreach ($result as $row): 
+                    $images = json_decode($row['images'], true); 
+                    if (!empty($images)) {
+                        $firstImage = reset($images);
+                    }
+                ?>
                     <a href="#">
                         <figure>
                             <div class="image-icons">
-                                <img src="product-image/product1.jpeg" />
+                                <img src="admin/assets/php/uploads/<?=$firstImage?>" />
                                 <i class="far fa-heart heart-icon"></i>
                                 <i class="far fa-star star-icon"></i>
                                 <i class="fas fa-share-alt share-icon"></i>
                                 <button class="cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button>
                             </div>
                             <figcaption class="discover-caption">
-                                <p class="discover-subtitle">description</p>
-                                <p class="discover-title">Product Name</p>
+                                <p class="discover-subtitle"><?= $row['power'] ?></p>
+                                <p class="discover-title"><?= $row['productName'] ?></p>
                                 <div class="price-div">
                                     <p class="price">300 RWF</p>
-                                    <p class="sale-price">400 RWF</p>
+                                    <p class="sale-price"><?= $row['price'] ?> RWF</p>
                                 </div>
                             </figcaption>
                         </figure>
                     </a>
-                    <a href="#">
-                        <figure>
-                            <div class="image-icons">
-                                <img src="product-image/product2.jpeg" />
-                                <i class="far fa-heart heart-icon"></i>
-                                <i class="far fa-star star-icon"></i>
-                                <i class="fas fa-share-alt share-icon"></i>
-                                <button class="cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                            </div>
-                            <figcaption class="discover-caption">
-                                <p class="discover-subtitle">description</p>
-                                <p class="discover-title">Product Name</p>
-                                <div class="price-div">
-                                    <p class="price">300 RWF</p>
-                                    <p class="sale-price">200 RWF</p>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a href="#">
-                        <figure>
-                            <div class="image-icons">
-                                <img src="product-image/product3.jpeg"/>
-                                <i class="far fa-heart heart-icon"></i>
-                                <i class="far fa-star star-icon"></i>
-                                <i class="fas fa-share-alt share-icon"></i>
-                                <button class="cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                            </div>
-                            <figcaption class="discover-caption">
-                                <p class="discover-subtitle">description</p>
-                                <p class="discover-title">Product Name</p>
-                                <div class="price-div">
-                                    <p class="price">300 RWF</p>
-                                    <p class="sale-price">200 RWF</p>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a href="#">
-                        <figure>
-                            <div class="image-icons">
-                                <img src="product-image/product4.jpeg"/>
-                                <i class="far fa-heart heart-icon"></i>
-                                <i class="far fa-star star-icon"></i>
-                                <i class="fas fa-share-alt share-icon"></i>
-                                <button class="cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button>
-                            </div>
-                            <figcaption class="discover-caption">
-                                <p class="discover-subtitle">description</p>
-                                <p class="discover-title">Product Name</p>
-                                <div class="price-div">
-                                    <p class="price">300 RWF</p>
-                                    <p class="sale-price">200 RWF</p>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </a>
+                    <?php endforeach; ?>
+                          
                 </div>
             </div>
         </div>
         
         <div class="spaces1"></div>
         <div class="spaces1"></div>
-        <!-- <div class="row">
-            <div class="col-md-12">
-                <p class="accessories-tittle ">From Different categories</p>
-            </div>
-            <br>
-            <br>
-            <div class="col-md-4 no-padding">
-                <div class="centered-row">
-                    <div class="col-md-12">
-                        <p class="accessories-tittle1">Automatic Pump controller</p>
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <img src="product-image/category/automatic Pump controller/Screenshot_12-4-2024_64914_www.alibaba.com.jpeg" class="category-photo" />
-                            </div>
-                            <div class="col-3">
-                                <img src="assets/images/cleo.jpeg" class="category-brand" />
-                            </div>
-                            <div class="col-9">
-                                <p class="category-prouduct mb-0">Pump controller</p>
-                                <p class="category-price mb-0">300 RWF</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <img src="product-image/category/automatic Pump controller/Screenshot_12-4-2024_64938_www.alibaba.com.jpeg" class="category-photo" />
-                            </div>
-                            <div class="col-3">
-                                <img src="assets/images/khan-fokhar.jpeg" class="category-brand" />
-                            </div>
-                            <div class="col-9">
-                                <p class="category-prouduct mb-0">Black</p>
-                                <p class="category-price mb-0"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 no-padding">
-                <div class="centered-row">
-                    <div class="col-md-12">
-                        <p class="accessories-tittle1">Shower Set 1</p>
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <img src="product-image/category/shower set 1/514-BszpHQL._AC_SX679_.jpg" class="category-photo" />
-                            </div>
-                            <div class="col-3">
-                                <img src="assets/images/marguchi.jpeg" class="category-brand" />
-                            </div>
-                            <div class="col-9">
-                                <p class="category-prouduct mb-0">Shower Set</p>
-                                <p class="category-price mb-0">300 RWF</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <img src="product-image/category/shower set 1/51tWKfvD1vL._AC_SX679_.jpg" class="category-photo" />
-                            </div>
-                            <div class="col-3">
-                                <img src="assets/images/rocks-pots.jpeg" class="category-brand" />
-                            </div>
-                            <div class="col-9">
-                                <p class="category-prouduct mb-0">__</p>
-                                <p class="category-price mb-0">-</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 no-padding">
-                <div class="centered-row">
-                    <div class="col-md-12">
-                        <p class="accessories-tittle1">Shower Set 2</p>
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <img src="product-image/category/shower set 2/51gqrfeFbYL._AC_SX679_.jpg" class="category-photo" />
-                            </div>
-                            <div class="col-3">
-                                <img src="assets/images/g-collection.jpeg" class="category-brand" />
-                            </div>
-                            <div class="col-9">
-                                <p class="category-prouduct mb-0">Shower Set</p>
-                                <p class="category-price mb-0">300 RWF</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <img src="product-image/category/shower set 2/61pewKX4SmL._AC_SX679_.jpg" class="category-photo" />
-                            </div>
-                            <div class="col-3">
-                                <img src="assets/images/aya.jpeg" class="category-brand" />
-                            </div>
-                            <div class="col-9">
-                                <p class="category-prouduct mb-0">__</p>
-                                <p class="category-price mb-0">-</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 no-padding">
-                <div class="centered-row">
-                    <div class="col-md-12">
-                        <p class="accessories-tittle1">Shower Set 3</p>
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <img src="product-image/category/Shower set 3/51PlLvOE0eL._AC_SX679_.jpg" class="category-photo" />
-                            </div>
-                            <div class="col-3">
-                                <img src="assets/images/cleo.jpeg" class="category-brand" />
-                            </div>
-                            <div class="col-9">
-                                <p class="category-prouduct mb-0">Shower Set</p>
-                                <p class="category-price mb-0">300 RWF</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <img src="product-image/category/Shower set 3/619fZEyB-fL._AC_SX679_.jpg" class="category-photo" />
-                            </div>
-                            <div class="col-3">
-                                <img src="assets/images/cleo.jpeg" class="category-brand" />
-                            </div>
-                            <div class="col-9">
-                                <p class="category-prouduct mb-0">__</p>
-                                <p class="category-price mb-0">-</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 no-padding">
-                <div class="centered-row">
-                    <div class="col-md-12">
-                        <p class="accessories-tittle1">Solar Hybrid Inverters</p>
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <img src="product-image/category/solar hybrid inverters/Screenshot_12-4-2024_62838_www.alibaba.com.jpeg" class="category-photo" />
-                            </div>
-                            <div class="col-3">
-                                <img src="assets/images/cleo.jpeg" class="category-brand" />
-                            </div>
-                            <div class="col-9">
-                                <p class="category-prouduct mb-0">Hybrid Inverter</p>
-                                <p class="category-price mb-0">300 EGP</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <img src="product-image/category/solar hybrid inverters/Screenshot_12-4-2024_6302_www.alibaba.com.jpeg" class="category-photo" />
-                            </div>
-                            <div class="col-3">
-                                <img src="assets/images/cleo.jpeg" class="category-brand" />
-                            </div>
-                            <div class="col-9">
-                                <p class="category-prouduct mb-0">__</p>
-                                <p class="category-price mb-0">-</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 no-padding">
-                <div class="centered-row">
-                    <div class="col-md-12">
-                        <p class="accessories-tittle1">Solar Panel</p>
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <img src="product-image/category/solar pannel/Screenshot_12-4-2024_7100_www.alibaba.com.jpeg
-                                " class="category-photo" />
-                            </div>
-                            <div class="col-3">
-                                <img src="assets/images/cleo.jpeg" class="category-brand" />
-                            </div>
-                            <div class="col-9">
-                                <p class="category-prouduct mb-0">Solar</p>
-                                <p class="category-price mb-0">300 RWF</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-6">
-                        <div class="row">
-                            <div class="col-12 mb-2">
-                                <img src="product-image/category/solar pannel/Screenshot_12-4-2024_71052_www.alibaba.com.jpeg" class="category-photo" />
-                            </div>
-                            <div class="col-3">
-                                <img src="assets/images/cleo.jpeg" class="category-brand" />
-                            </div>
-                            <div class="col-9">
-                                <p class="category-prouduct mb-0">__</p>
-                                <p class="category-price mb-0">-</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="row justify-content-end">
-                    <div class="col-md-6 text-right">
-                        <button class="dicover-btn">Discover More</button>
-                    </div>
-                  </div>
-            </div>  
-        </div> -->
         <div class="spaces1"></div>
 		<div class="row">
             <div class="col-md-12">
