@@ -7,7 +7,7 @@
 <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, invoice, html5, responsive, Projects">
 <meta name="author" content="Dreamguys - Bootstrap Admin Template">
 <meta name="robots" content="noindex, nofollow">
-<title>Dreams Pos admin template</title>
+<title>Edit Product</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.jpg">
 
@@ -50,14 +50,14 @@ include_once './include_pages/header.php'
     <ul>
     <li><a href="productlist.php">Product List</a></li>
     <li><a href="addproduct.php">Add Product</a></li>
-    <li><a href="categorylist.php">Category List</a></li>
-    <li><a href="addcategory.php">Add Category</a></li>
+    <!-- <li><a href="categorylist.php">Category List</a></li>
+    <li><a href="addcategory.php">Add Category</a></li> -->
     </ul>
     </li>
     
     
     
-    <li class="submenu">
+    <!-- <li class="submenu">
     <a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img"><span> Users</span> <span class="menu-arrow"></span></a>
     <ul>
     <li><a href="newuser.php">New User </a></li>
@@ -74,13 +74,14 @@ include_once './include_pages/header.php'
     <li><a href="grouppermissions.html">Group Permissions</a></li>
     <li><a href="taxrates.html">Tax Rates</a></li>
     </ul>
-    </li>
+    </li> -->
     </ul>
     </div>
     </div>
     </div>
 
 <div class="page-wrapper">
+<form  method="post" id="update-form">
 <div class="content">
 <div class="page-header">
 <div class="page-title">
@@ -95,108 +96,40 @@ include_once './include_pages/header.php'
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
 <label>Product Name</label>
-<input type="text" value="Macbook pro">
+<input type="text" name="productName" id="productName" value="">
 </div>
 </div>
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
 <label>Category</label>
-<select class="select">
-<option>Computers</option>
-<option>Mac</option>
-</select>
+<input type="text" name="category" id="category" value="">
 </div>
 </div>
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
-<label>Sub Category</label>
-<select class="select">
-<option>None</option>
-<option>option1</option>
-</select>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6 col-12">
-<div class="form-group">
-<label>Brand</label>
-<select class="select">
-<option>None</option>
-<option>option1</option>
-</select>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6 col-12">
-<div class="form-group">
-<label>Unit</label>
-<select class="select">
-<option>Piece</option>
-<option>Kg</option>
-</select>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6 col-12">
-<div class="form-group">
-<label>SKU</label>
-<input type="text" value="PT0002">
-</div>
-</div>
-<div class="col-lg-3 col-sm-6 col-12">
-<div class="form-group">
-<label>Minimum Qty</label>
-<input type="text" value="5">
-</div>
-</div>
-<div class="col-lg-3 col-sm-6 col-12">
-<div class="form-group">
-<label>Quantity</label>
-<input type="text" value="50">
-</div>
-</div>
-<div class="col-lg-12">
-<div class="form-group">
-<label>Description</label>
-<textarea class="form-control">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</textarea>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6 col-12">
-<div class="form-group">
-<label>Tax</label>
-<select class="select">
-<option>Choose Tax</option>
-<option>2%</option>
-</select>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6 col-12">
-<div class="form-group">
-<label>Discount Type</label>
-<select class="select">
-<option>Percentage</option>
-<option>10%</option>
-<option>20%</option>
-</select>
+<label>Power</label>
+<input type="text" name="power" id="power" value="">
 </div>
 </div>
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
 <label>Price</label>
-<input type="text" value="1500.00">
+<input type="text" name="price" id="price" value="">
 </div>
 </div>
-<div class="col-lg-3 col-sm-6 col-12">
+
+<div class="col-lg-12">
 <div class="form-group">
-<label> Status</label>
-<select class="select">
-<option>Active</option>
-<option>Open</option>
-</select>
+<label>Description</label>
+<textarea class="form-control" name="description" id="description"></textarea>
 </div>
 </div>
+
 <div class="col-lg-12">
 <div class="form-group">
 <label> Product Image</label>
 <div class="image-upload">
-<input type="file">
+<input type="file" name="">
 <div class="image-uploads">
 <img src="assets/img/icons/upload.svg" alt="img">
 <h4>Drag and drop a file to upload</h4>
@@ -233,6 +166,7 @@ include_once './include_pages/header.php'
 </div>
 
 </div>
+</form>
 </div>
 </div>
 

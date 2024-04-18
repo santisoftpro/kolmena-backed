@@ -11,13 +11,13 @@
 <ul>
 <li><a href="productlist.php">Product List</a></li>
 <li><a href="addproduct.php">Add Product</a></li>
-<li><a href="categorylist.php">Category List</a></li>
-<li><a href="addcategory.php">Add Category</a></li>
+<!-- <li><a href="categorylist.php">Category List</a></li>
+<li><a href="addcategory.php">Add Category</a></li> -->
 </ul>
 </li>
 
 
-
+<!-- 
 <li class="submenu">
 <a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img"><span> Users</span> <span class="menu-arrow"></span></a>
 <ul>
@@ -35,7 +35,7 @@
 <li><a href="grouppermissions.html">Group Permissions</a></li>
 <li><a href="taxrates.html">Tax Rates</a></li>
 </ul>
-</li>
+</li> -->
 </ul>
 </div>
 </div>

@@ -80,6 +80,7 @@ include_once './include_pages/header.php'
 </div>
 </div>
 <div class="page-wrapper">
+    <form  method="post" id="update-form">
 <div class="content">
 <div class="page-header">
 <div class="page-title">
@@ -150,6 +151,7 @@ include_once './include_pages/header.php'
 </div>
 
 </div>
+</form>
 </div>
 </div>
 
