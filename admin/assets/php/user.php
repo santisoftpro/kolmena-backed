@@ -40,4 +40,20 @@ class User extends Database {
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
         return $row;
     }
+
+    // Forogt password
+
+    public function forgot_password($token, $email)
+    {
+        try {
+           $sql = "UPDATE user SET token= :token, token_expire= DATE_ADD(NOW(),INTERVAL 10 MINUTE) WHERE email = :email";
+           $stmt = $this->conn->prepare($sql);
+           $stmt->execute(['token'=>$token, 'email'=>$email]);
+           return true;
+        } catch (PDOException $e) {
+            echo "forgot error" .$e->getMessage();
+            return false;
+
+        }
+    }
 }

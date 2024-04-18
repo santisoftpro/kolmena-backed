@@ -22,33 +22,39 @@
 
 <div class="main-wrapper">
 <div class="account-content">
+<form method="post" id="forget-form">
 <div class="login-wrapper">
+
 <div class="login-content">
+   
 <div class="login-userset ">
 <div class="login-logo">
 <img src="assets/img/logo.png" alt="img">
 </div>
 <div class="login-userheading">
 <h3>Forgot password?</h3>
+<div id="forgotAlert"></div>
 <h4>Don’t warry! it happens. Please enter the address <br>
 associated with your account.</h4>
 </div>
 <div class="form-login">
 <label>Email</label>
 <div class="form-addons">
-<input type="text" placeholder="Enter your email address">
+<input type="text" name="email" placeholder="Enter your email address">
 <img src="assets/img/icons/mail.svg" alt="img">
 </div>
 </div>
 <div class="form-login">
-<a class="btn btn-login" href="signin.html">Submit</a>
+<button class="btn btn-login" id="forget-btn">Submit</button>
 </div>
 </div>
 </div>
+
 <div class="login-img">
 <img src="assets/img/login.jpg" alt="img">
 </div>
 </div>
+</form>
 </div>
 </div>
 
@@ -60,5 +66,6 @@ associated with your account.</h4>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 <script src="assets/js/script.js"></script>
+<script src="assets/js/dynamic/user.js"></script>
 </body>
 </html>

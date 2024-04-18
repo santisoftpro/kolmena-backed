@@ -56,4 +56,19 @@ if(isset($_POST["action"]) && $_POST["action"] == "login")
  }
 
 }
+
+// handle forgot passworf ajax request
+
+if(isset($_POST['action']) && $_POST['action']=='forgot')
+{
+    $email = $user->test_input($_POST['email']);
+    $user_found = $user->currentUser($email);
+    if($user_found != null)
+        {
+          $token = uniqid();
+          $token = str_shuffle($token);
+
+          $user->forgot_password($token,$email);
+        }
+}
 ?> 

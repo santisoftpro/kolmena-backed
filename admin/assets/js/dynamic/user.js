@@ -59,4 +59,23 @@ $(document).ready(function () {
         }
         
     });
+// forgot function
+    $("#forget-btn").click(function (e) { 
+        if($("#forget-form")[0].checkValidity())
+        {
+            e.preventDefault();
+            $("#forget-btn").val('Please wait');
+            $.ajax({
+                url: "./assets/php/action.php",
+                method: "post",
+                data: $("#forget-form").serialize()+'&action=forgot',
+                success: function (response) {
+                    $("#forget-form")[0].reset();
+                    $("#forgotAlert").html(response);
+                }
+            });
+        }
+       
+        
+    });
 });
