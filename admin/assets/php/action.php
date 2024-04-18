@@ -1,6 +1,11 @@
 <?php
 session_start();
+
+include('smtp/PHPMailerAutoload.php');
+$mail = new PHPMailer(true);
+
 require_once './user.php';
+
 $user = new User();
 // registerinng user
 if(isset($_POST["action"]) && $_POST["action"] == "register")
@@ -69,6 +74,62 @@ if(isset($_POST['action']) && $_POST['action']=='forgot')
           $token = str_shuffle($token);
 
           $user->forgot_password($token,$email);
+
+          $msg = '<h3>Click the below link to reset your password.<br><a href="http://localhost/kolmena/admin/reset-pass.php?email='.$email.'&token='.$token.'">http://localhost/kolmena/admin/reset-pass.php?email='.$email.'&token='.$token.' </a><br>Regards<br>Kolmena</h3>';
+
+          try {
+
+
+            // echo smtp_mailer($email, 'Reset Password', $msg);
+      
+            // Send the email
+            if (smtp_mailer($email, 'Reset Password', $msg)) {
+                echo $user->showMessage('success', 'We have sent you the reset link to your email. Please check your inbox.');
+            } else {
+                echo $user->showMessage('danger', 'Something went wrong while sending the email. Please try again later.');
+            }
+        } catch (Exception $e) {
+            echo $user->showMessage('danger', 'An error occurred: ' . $mail->ErrorInfo);
+        }
+        
+        }
+        else{
+            echo $user->showMessage('info', 'This e-mail is not registered');
         }
 }
+
+function smtp_mailer($to, $subject, $msg)
+{
+
+    $mail = new PHPMailer();
+    $mail->IsSMTP();
+    $mail->SMTPAuth = true;
+    $mail->SMTPSecure = 'tls';
+    $mail->Host = "smtp.gmail.com";
+    $mail->Port = 587;
+    $mail->IsHTML(true);
+    $mail->CharSet = 'UTF-8';
+    //$mail->SMTPDebug = 2; 
+    $mail->Username = "andrewellicky97@gmail.com";
+    $mail->Password = "orqehkhbucxteplp";
+    // $mail->SetFrom("");
+    $mail->setFrom('andrewellicky97@gmail.com', 'Kolmena Group');
+    $mail->Subject = $subject;
+    $mail->Body = 'greeting!! ' . $msg;
+    $mail->AddAddress($to);
+    $mail->SMTPOptions = array(
+        'ssl' => array(
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+            'allow_self_signed' => false
+        )
+    );
+    if (!$mail->Send()) {
+        echo $mail->ErrorInfo;
+        
+    } else {
+        return true;
+    }
+}
+
 ?> 
