@@ -139,7 +139,7 @@ session_start();
 	
     </div>
 
-    <div class="container-fulid welcome">
+    <div class="container-fulid">
         <div class="row justify-content-center">
             <form class="form-inline search-form">
                    
@@ -147,13 +147,11 @@ session_start();
                     <div class="input-group-prepend border-0">
                       <button id="button-addon4" type="button" class="btn btn-link text-info"><i class="fa fa-search search-icon"></i></button>
                     </div>
-                    <input type="search" placeholder="Search" aria-describedby="button-addon4" class="form-control bg-none border-0">
+                    <input type="text" aria-describedby="button-addon4" class="form-control bg-none border-0 text-black" style="">
                   </div>
               </form>
             <div class="col-8 text-center pt-3 pb-4">
-                <p class="welcome-mesg mb-0">Welcome to KOLMENA GROUP</p>
-               
-                <p class="welcome-mesg1 mb-0">We sell all different types of accessories</p>            
+                <p class="welcome-mesg mb-0 text-black">KOLMENA GROUP</p>
             </div>
           </div>
     </div>
@@ -198,7 +196,7 @@ session_start();
                     <p class="card-text accessories-text">
                         PolyCrystalline solar panel consisting of several crystals of silicon in a single PV cell. They are very strong and less sensitive to environmental conditions. They also have a long life expectancy and they are easy to install. KOLMENA GROUP brought you 10W, 50W, 100W, 150W Polycrystalline solar panels                   
                     </p>
-                    <a href="#" class="btn explore-btn">Explore</a>
+                    <!-- <a href="#" class="btn explore-btn">Explore</a> -->
                 </div>
             </div>
             <div class="card no-padding">
@@ -242,7 +240,7 @@ session_start();
                          excellent low light effect, and high transparency. Light rate high-quality tempered glass, widened and thickened frame is MORE beautiful and durable.
                                              
                     </p>
-                    <a href="#" class="btn explore-btn">Explore</a>
+                    <!-- <a href="#" class="btn explore-btn">Explore</a> -->
                 </div>
             </div>
         </div>

@@ -3,9 +3,9 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 class Database {
-    private $dns = "mysql:host=localhost;dbname=u106709385_kolmena";
-    private $dbuser = "u106709385_roots";
-    private $dbpass = "Cyuzuzo@123";
+    private $dns = "mysql:host=localhost;dbname=kolmena";
+    private $dbuser = "root";
+    private $dbpass = "";
     public $conn;
     public function __construct() 
 {

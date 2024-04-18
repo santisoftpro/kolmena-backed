@@ -72,7 +72,7 @@
                     <a class="nav-link" href="index.php#work">Projects</a>
                     <a class="nav-link" href="index.php#news">Blog</a>
                     <a class="nav-link" href="index.php#contactus">Contact Us</a>
-                    <a class="nav-link active" href="product.php">Product</a>
+                    <a class="nav-link active" href="home-page3.php">Product</a>
                 </div>
 
             </div>
@@ -111,7 +111,7 @@
                         <a class="nav-link" href="index.php#contactus">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="product.php">Product</a>
+                        <a class="nav-link active" href="home-page3.php">Product</a>
                     </li>
                 </ul>
             </nav>

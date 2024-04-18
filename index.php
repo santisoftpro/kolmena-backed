@@ -32,6 +32,13 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="kolmena/css/style.css">
 </head>
+
+<style>
+    .team-image img{
+        width: 380px;
+        height: 400px;
+    }
+</style>
 <body data-spy="scroll" data-target=".navbar" data-offset="90" class="position-relative">
 
 <!--Preloader-->
@@ -207,7 +214,7 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 9; letter-spacing: .5px;"><a class="btn btn-green btn btn btn-large btn-rounded scroll" href="#about">Click to buy</a> <a class="btn btn-green btn btn btn-large btn-rounded scroll ml-sm-3" href="javascript:void(0);">Get a Quote</a></div>
+                         style="z-index: 9; letter-spacing: .5px;"><a class="btn btn-green btn btn btn-large btn-rounded" href="home-page3.php">Click to buy</a></div>
                 </li>
                     <!-- SLIDE  -->
                 <li data-index="rs-2" data-transition="crossfade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-thumb="images/slide-img2.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -284,7 +291,7 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 9; letter-spacing: .5px;"><a class="btn btn-green btn btn-large btn-rounded scroll" href="#about">GET A QUOTE</a></div>
+                         style="z-index: 9; letter-spacing: .5px;"><a class="btn btn-green btn btn-large btn-rounded" href="home-page3.php">Buy Now</a></div>
 
                 </li>
 
@@ -358,7 +365,7 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 9; letter-spacing: .5px;"><a class="btn btn-green btn btn-large btn-rounded scroll" href="#about">GET A QUOTE</a></div>
+                         style="z-index: 9; letter-spacing: .5px;"><a class="btn btn-green btn btn-large btn-rounded" href="home-page3.php">Buy Now</a></div>
                 </li>
             </ul>
         </div>
@@ -390,7 +397,7 @@
                     <li>The company also offers a strong support in solar irrigation.</li>
                     <li>solar pumping system and domestic water filters...</li>
                 </ul>
-                <a class="btn btn-rounded btn-large btn btn-green-orange text-capitalize mt-30">Get Started</a>
+                <a href="#contactus" class="btn btn-rounded btn-large btn btn-green-orange text-capitalize mt-30 scroll">Get Started</a>
             </div>
         </div>
     </div>
@@ -407,7 +414,7 @@
                 <div class="blog-text blog-right ml-lg-auto">
                     <h2>OUR VISION</h2>
                     <p>A Remarkable Africa of happy people free of night darkness, accessing clean energy, affordable and sustainable living.</p>
-                    <a href="kolmena/news.html" class="btn btn-rounded btn-large btn btn-green-orange fadeInDown-slide animated  text-capitalize">Learn More</a>
+                    <!-- <a href="kolmena/news.html" class="btn btn-rounded btn-large btn btn-green-orange fadeInDown-slide animated  text-capitalize"></a> -->
                 </div>
             </div>
             <div class="col-md-6">
@@ -440,7 +447,7 @@
                     <p>To develop, provide and install affordable and long-lasting solar home systems, solar modules, solar irrigation systems, and solar mini-grids.
                         To contribute to achieving the 7th MDGs goal ‘’ensuring access to affordable, reliable, sustainable, and modern energy for all.
                         To provide efficient technical service in areas of our expertise.</p>
-                    <a href="kolmena/news.html" class="btn btn-rounded btn-large btn btn-green-orange fadeInDown-slide animated  text-capitalize">Learn More</a>
+                    <!-- <a href="kolmena/news.html" class="btn btn-rounded btn-large btn btn-green-orange fadeInDown-slide animated  text-capitalize">Learn More</a> -->
                 </div>
             </div>
             <div class="col-md-6 order-md-2">
@@ -532,7 +539,7 @@
         <div class="col-lg-12 text-center text-rotate">
             <p class="parallex-para text-center text-white">ARE YOU LOOKING FOR AN INSTALLER</p>
             <h2 class="parallex-heading text-center font-weight-bold text-white text-capitalize mb-30">We are a Global Solar Panel Pump and Street light installer</h2>
-            <a class="btn btn-green btn btn-large btn-rounded btn btn-medium btn-transparent-white text-capitalize" href="javascript:void(0);">Contact Us</a>
+            <a class="btn btn-green btn btn-large btn-rounded btn btn-medium btn-transparent-white text-capitalize scroll" href="#contactus">Contact Us</a>
         </div>
     </div>
 </section>
@@ -560,196 +567,186 @@
                     <div class="team-box item">
                         <!--Team Image-->
                         <div class="team-image">
-                            <img src="kolmena/img/team-mem-3.jpg" alt="image">
+                            <img src="kolmena/img/team1.jpeg" alt="image">
                             <!--Team Overlay-->
                             <div class="overlay center-block">
                                 <!--Team Social-->
-                                <ul class="team-social p-0">
+                                <!-- <ul class="team-social p-0">
                                     <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
                                     <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                                     <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                                     <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                </ul>
+                                </ul> -->
                             </div>
                         </div>
                         <!--Team Text-->
                         <div class="team-text">
-                            <h3 class="text-capitalize">Alex Walkin</h3>
-                            <span class="alt-font text-capitalize">Owner / Co-founder</span>
+                            <h3 class="text-capitalize">Imanishimwe Stalone</h3>
+                            <span class="alt-font text-capitalize">HUMAN RESOURCE</span>
                         </div>
-                        <!--Team Progress-->
-                        <ul class="team-progress text-left">
-                            <!--Progress Item-->
-                            <li class="progress-item">
-                                <h5 class="text-capitalize">Project Management <span class="float-right"><b class="count">90</b>%</span></h5>
-                                <div class="progress">
-                                    <span class="progress-bar green-background gradient-bg1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></span>
-                                </div>
-                            </li>
-                            <!--Progress Item-->
-                            <li class="progress-item">
-                                <h5 class="text-capitalize">Consulting<span class="float-right"><b class="count">75</b>%</span></h5>
-                                <div class="progress">
-                                    <span class="progress-bar blue-background" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></span>
-                                </div>
-                            </li>
-                        </ul>
+                      
                     </div>
                     <!--Team Item-->
                     <div class="team-box item">
                         <!--Team Image-->
                         <div class="team-image">
-                            <img src="kolmena/img/team-mem-2.jpg" alt="image">
+                            <img src="kolmena/img/team2.jpeg" alt="image">
                             <!--Team Overlay-->
                             <div class="overlay center-block">
                                 <!--Team Social-->
                                 <ul class="team-social p-0">
-                                    <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
                                     <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                                     <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
                                 </ul>
                             </div>
                         </div>
                         <!--Team Text-->
                         <div class="team-text">
-                            <h3 class="text-capitalize">Teena Jhon</h3>
-                            <span class="alt-font text-capitalize">Lead Designer</span>
+                            <h3 class="text-capitalize">Eng.Mubera Sosthene</h3>
+                            <span class="alt-font text-capitalize">CEO</span>
                         </div>
-                        <!--Team Progress-->
-                        <ul class="team-progress text-left">
-                            <!--Progress Item-->
-                            <li class="progress-item">
-                                <h5 class="text-capitalize">Designer<span class="float-right"><b class="count">75</b>%</span></h5>
-                                <div class="progress">
-                                    <span class="progress-bar blue-background" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></span>
-                                </div>
-                            </li>
-                            <!--Progress Item-->
-                            <li class="progress-item">
-                                <h5 class="text-capitalize">Customer Care<span class="float-right"><b class="count">90</b>%</span></h5>
-                                <div class="progress">
-                                    <span class="progress-bar green-background gradient-bg1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></span>
-                                </div>
-                            </li>
-                        </ul>
+                       
                     </div>
                     <!--Team Item-->
                     <div class="team-box item">
                         <!--Team Image-->
                         <div class="team-image">
-                            <img src="kolmena/img/team-mem-1.jpg" alt="image">
+                            <img src="kolmena/img/team3.jpeg" alt="image">
                             <!--Team Overlay-->
                             <div class="overlay center-block">
                                 <!--Team Social-->
                                 <ul class="team-social p-0">
-                                    <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
                                     <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                                     <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
                                 </ul>
                             </div>
                         </div>
                         <!--Team Text-->
                         <div class="team-text">
-                            <h3 class="text-capitalize">David Warrior</h3>
-                            <span class="alt-font text-capitalize">Marketing Head</span>
+                            <h3 class="text-capitalize">UWISHIMYE DIEUDONNE</h3>
+                            <span class="alt-font text-capitalize">CHIEF DRIVER</span>
                         </div>
-                        <!--Team Progress-->
-                        <ul class="team-progress text-left">
-                            <!--Progress Item-->
-                            <li class="progress-item">
-                                <h5 class="text-capitalize">Marketing Online<span class="float-right"><b class="count">90</b>%</span></h5>
-                                <div class="progress">
-                                    <span class="progress-bar green-background gradient-bg1" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></span>
-                                </div>
-                            </li>
-                            <!--Progress Item-->
-                            <li class="progress-item">
-                                <h5 class="text-capitalize">Dealing<span class="float-right"><b class="count">75</b>%</span></h5>
-                                <div class="progress">
-                                    <span class="progress-bar blue-background" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></span>
-                                </div>
-                            </li>
-                        </ul>
+                     
                     </div>
                     <!--Team Item-->
                     <div class="team-box item">
                         <!--Team Image-->
                         <div class="team-image">
-                            <img src="kolmena/img/team-mem-3.jpg" alt="image">
+                            <img src="kolmena/img/team4.jpeg" alt="image">
                             <!--Team Overlay-->
                             <div class="overlay center-block">
                                 <!--Team Social-->
                                 <ul class="team-social p-0">
-                                    <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
                                     <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                                     <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
                                 </ul>
                             </div>
                         </div>
                         <!--Team Text-->
                         <div class="team-text">
-                            <h3 class="text-capitalize">Alex Walkin</h3>
-                            <span class="alt-font text-capitalize">Owner / Co-founder</span>
+                            <h3 class="text-capitalize">Janviere Ibyishatse</h3>
+                            <span class="alt-font text-capitalize">ACCOUNTANT</span>
                         </div>
-                        <!--Team Progress-->
-                        <ul class="team-progress text-left">
-                            <!--Progress Item-->
-                            <!--Progress Item-->
-                            <li class="progress-item">
-                                <h5 class="text-capitalize">Consulting<span class="float-right"><b class="count">75</b>%</span></h5>
-                                <div class="progress">
-                                    <span class="progress-bar blue-background" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></span>
-                                </div>
-                            </li>
-                            <li class="progress-item">
-                                <h5 class="text-capitalize">Project Management <span class="float-right"><b class="count">90</b>%</span></h5>
-                                <div class="progress">
-                                    <span class="progress-bar green-background gradient-bg1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></span>
-                                </div>
-                            </li>
-                        </ul>
+                      
                     </div>
                     <!--Team Item-->
                     <div class="team-box item">
                         <!--Team Image-->
                         <div class="team-image">
-                            <img src="kolmena/img/team-mem-2.jpg" alt="image">
+                            <img src="kolmena/img/team6.jpeg" alt="image">
                             <!--Team Overlay-->
                             <div class="overlay center-block">
                                 <!--Team Social-->
                                 <ul class="team-social p-0">
-                                    <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
                                     <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
                                     <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
                                 </ul>
                             </div>
                         </div>
                         <!--Team Text-->
                         <div class="team-text">
-                            <h3 class="text-capitalize">Teena Jhon</h3>
-                            <span class="alt-font text-capitalize">Lead Designer</span>
+                            <h3 class="text-capitalize">Niyonkuru Samuel</h3>
+                            <span class="alt-font text-capitalize">CHIEF TECHNICIAN</span>
                         </div>
-                        <!--Team Progress-->
-                        <ul class="team-progress text-left">
-                            <!--Progress Item-->
-                            <li class="progress-item">
-                                <h5 class="text-capitalize">Customer Care<span class="float-right"><b class="count">90</b>%</span></h5>
-                                <div class="progress">
-                                    <span class="progress-bar green-background gradient-bg1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></span>
-                                </div>
-                            </li>
-                            <!--Progress Item-->
-                            <li class="progress-item">
-                                <h5 class="text-capitalize">Designer<span class="float-right"><b class="count">75</b>%</span></h5>
-                                <div class="progress">
-                                    <span class="progress-bar blue-background" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></span>
-                                </div>
-                            </li>
-                        </ul>
+                      
+                    </div>
+
+                    <!--Team Item-->
+                    <div class="team-box item">
+                        <!--Team Image-->
+                        <div class="team-image">
+                            <img src="kolmena/img/team5.jpeg" alt="image">
+                            <!--Team Overlay-->
+                            <div class="overlay center-block">
+                                <!--Team Social-->
+                                <ul class="team-social p-0">
+                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Team Text-->
+                        <div class="team-text">
+                            <h3 class="text-capitalize">Mujyambere Abdallah</h3>
+                            <span class="alt-font text-capitalize">MARKETING</span>
+                        </div>
+                      
+                    </div>
+                 <!--Team Item-->
+                 <div class="team-box item">
+                        <!--Team Image-->
+                        <div class="team-image">
+                            <img src="kolmena/img/team7.jpeg" alt="image">
+                            <!--Team Overlay-->
+                            <div class="overlay center-block">
+                                <!--Team Social-->
+                                <ul class="team-social p-0">
+                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Team Text-->
+                        <div class="team-text">
+                            <h3 class="text-capitalize">USANASE ALINE</h3>
+                            <span class="alt-font text-capitalize">RECEPTIONIST</span>
+                        </div>
+                      
+                    </div>
+                     <!--Team Item-->
+                 <div class="team-box item">
+                        <!--Team Image-->
+                        <div class="team-image">
+                            <img src="kolmena/img/team8.jpeg" alt="image">
+                            <!--Team Overlay-->
+                            <div class="overlay center-block">
+                                <!--Team Social-->
+                                <ul class="team-social p-0">
+                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Team Text-->
+                        <div class="team-text">
+                            <h3 class="text-capitalize">MUKWINDI ANGE</h3>
+                            <span class="alt-font text-capitalize">PUBLIC RELATION</span>
+                        </div>
+                      
                     </div>
                 </div>
             </div>
@@ -958,7 +955,7 @@
         <div class="row">
             <div class="col-md-12">
                 <!--Testimonials with background 02-->
-                <div class="feedback-slides">
+                <!-- <div class="feedback-slides">
                     <div class="client-thumbnails">
                         <div>
                             <div class="item">
@@ -1026,7 +1023,7 @@
                         </div>
 
                     </div>
-                </div>
+                </div> -->
                 <!--Testimonials with background ends-->
             </div>
         </div>
@@ -1110,7 +1107,6 @@
             </div>
             <div class="col-md-6 p-0">
                 <div id="google-map" class="bg-light-gray map"></div>
-
 
             </div>
         </div>
