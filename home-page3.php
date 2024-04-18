@@ -147,7 +147,7 @@ session_start();
                     <div class="input-group-prepend border-0">
                       <button id="button-addon4" type="button" class="btn btn-link text-info"><i class="fa fa-search search-icon"></i></button>
                     </div>
-                    <input type="text" aria-describedby="button-addon4" class="form-control bg-none border-0 text-black" style="">
+                    <input type="text" aria-describedby="button-addon4" class="form-control bg-none border-0 text-black" id="getData">
                   </div>
               </form>
             <div class="col-8 text-center pt-3 pb-4">
@@ -157,7 +157,7 @@ session_start();
     </div>
     <section class="about bg-light" id="about">
     <div class="container">
-        <div class="card-deck">
+        <div class="card-deck" id="fakeshoe">
             <div class="card no-padding">
                 <div id="carousel-1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -252,7 +252,7 @@ session_start();
             <br>
             <br>
             <div class="col-md-12">
-                <div class="discovers-grid">
+                <div class="discovers-grid" id="show-product">
                 <?php
                   include './admin/mysqli/db.php';
                   $sql =  "SELECT * FROM posts ORDER BY product_id DESC";
@@ -409,6 +409,22 @@ session_start();
 
 <script src="assets/js/jquery.easing.min.js"></script>
 <script src="assets/js/scrolling-nav.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#getData").on('keyup', function () {
+            var getName = $(this).val();
+            $.ajax({
+                type: "POST",
+                url: "fetch/fetch_products.php",
+                data: {name:getName},
+                success: function (response) {
+                    $("#show-product").html(response);
+                    $("#fakeshoe").hide();
+                }
+            });
+        });
+    });
+</script>
 <script>
 	$(function () {
 		$(document).scroll(function () {
