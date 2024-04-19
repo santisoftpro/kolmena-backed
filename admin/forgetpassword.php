@@ -45,7 +45,7 @@ associated with your account.</h4>
 </div>
 </div>
 <div class="form-login">
-<button class="btn btn-login" id="forget-btn">Submit</button>
+<input type="submit" class="btn btn-login" id="forget-btn">
 </div>
 </div>
 </div>

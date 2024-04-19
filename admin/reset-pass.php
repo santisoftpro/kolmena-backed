@@ -1,8 +1,48 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 session_start();
-if(isset($_SESSION['user'])){
-    header("Location: dashboard.php");
+require_once './assets/php/user.php';
+$msg = '';
+$user = new User();
+if(isset($_GET['email']) && isset($_GET['token']))
+{
+    $email = $user->test_input($_GET['email']);
+    $token = $user->test_input($_GET['token']);
+
+    $auth_user = $user->reset_pass_auth($email, $token);
+
+    if($auth_user != null)
+    {
+        if(isset($_POST['submit']))
+        {
+            $newpass = $_POST['pass'];
+            $cnewpass = $_POST['cpass'];
+            
+            $hnewpass = password_hash($newpass,PASSWORD_DEFAULT);
+            
+            if($newpass == $cnewpass)
+            {
+                $user->update_new_pass($hnewpass, $email);
+                $msg = 'Password Changed Successfully! <br> <a href="index.php">Login here</a>';
+
+            }
+            else{
+                $msg = 'Password did not matched';
+            }
+        }
+    }
+    else{
+        header("Location: index.php");
+        exit();
+    }
 }
+else{
+    header("Location: index.php");
+    exit();
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +54,7 @@ if(isset($_SESSION['user'])){
 <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, invoice, html5, responsive, Projects">
 <meta name="author" content="Dreamguys - Bootstrap Admin Template">
 <meta name="robots" content="noindex, nofollow">
-<title>Login - KOLMENA</title>
+<title>Reset Password</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="assets/img/favcon.png">
 
@@ -29,7 +69,7 @@ if(isset($_SESSION['user'])){
 
 <div class="main-wrapper">
 <div class="account-content">
-<form method="post" id="login-form">
+<form method="post" id="reset-form">
 <div class="login-wrapper">
 <div class="login-content">
 <div class="login-userset">
@@ -38,54 +78,33 @@ if(isset($_SESSION['user'])){
 </div>
 <div class="login-userheading">
 <h3>Sign In</h3>
-<div id="loginAlert"></div>
-<h4>Please login to your account</h4>
+<div class="text-center lead my-2"><?=$msg?></div>
+<h4>Please Reset Password login to your account</h4>
 </div>
 
 <div class="form-login">
-<label>Email</label>
-<div class="form-addons">
-<input type="text" name="email" placeholder="Enter your email address">
-<img src="assets/img/icons/mail.svg" alt="img">
+<label>New Password</label>
+<div class="pass-group">
+<input type="password" class="pass-input" name="pass" id="pass" placeholder="New password">
+<span class="fas toggle-password fa-eye-slash"></span>
 </div>
 </div>
 <div class="form-login">
 <label>Password</label>
 <div class="pass-group">
-<input type="password" class="pass-input" name="password" id="password" placeholder="Enter your password">
+<input type="password" class="pass-input" name="cpass" id="cpass" placeholder="Confirm Password">
 <span class="fas toggle-password fa-eye-slash"></span>
 </div>
 </div>
 <div class="form-login">
-<div class="alreadyuser">
-<h4><a href="forgetpassword.php" class="hover-a">Forgot Password?</a></h4>
-</div>
+
 </div>
 <div class="form-login">
-<button id="login-btn" class="btn btn-login">Sign In</button>
+<button type="submit" name="submit" class="btn btn-login">Reset Password</buton>
 </div>
-<div class="signinform text-center">
-<h4>Don’t have an account? <a href="signup.php" class="hover-a">Sign Up</a></h4>
-</div>
-<div class="form-setlogin">
-<h4>Or sign up with</h4>
-</div>
-<div class="form-sociallink">
-<ul>
-<li>
-<a href="javascript:void(0);">
-<img src="assets/img/icons/google.png" class="me-2" alt="google">
-Sign Up using Google
-</a>
-</li>
-<li>
-<a href="javascript:void(0);">
-<img src="assets/img/icons/facebook.png" class="me-2" alt="google">
-Sign Up using Facebook
-</a>
-</li>
-</ul>
-</div>
+
+
+
 </div>
 </div>
 

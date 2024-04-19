@@ -6,28 +6,29 @@ $(document).ready(function () {
         if($("#register-form")[0].checkValidity()) {
             e.preventDefault();
             $("#register-btn").val('Please Wait...');
-            if($("#rpassword").val() != $("#rcpassword").val())
-            {
-               $("#passError").text('* Password did not matched');
-               $("#register-btn").val('sign up');
-            }
-            else{
+            if($("#rpassword").val() != $("#rcpassword").val()) {
+                $("#passError").text('* Passwords do not match');
+                $("#register-btn").val('Sign up');
+            } else {
                 $("#passError").text('');
                 $.ajax({
                     url: './assets/php/action.php',
                     method: 'post',
                     data: $("#register-form").serialize()+'&action=register',
                     success: function (response) {
-                        $("#register-btn").val('sign up');
+                        console.log("Response:", response); // Check the response in the console
+                        $("#register-btn").val('Sign up');
                       
-                        if(response === 'register'){
-                            console.log(response);
-                            window.location = 'dashboard.php';
-                        }
-                     
-                        else {
+                        if(response.trim() === 'register') {
+                            console.log("Registration successful"); // Check if this message appears
+                            window.location.href = 'dashboard.php';
+                        } else {
+                            console.log("Registration failed:", response); // Check if this message appears
                             $("#regAlert").html(response);
                         }
+                    },
+                    error: function(xhr, status, error) {
+                        console.log("Error:", error); // Check if there are any AJAX errors
                     }
                 });
             }
@@ -43,17 +44,18 @@ $(document).ready(function () {
             method: "post",
             data: $("#login-form").serialize()+'&action=login',
             success: function (response) {
-                    // console.log(response);
-                  
-                    if(response === 'login') 
-                    {
-                        window.location = 'dashboard.php';
-                    }
-                    
-                    else{
-                        $("#loginAlert").html(response);
-                    }
-                    window.location = 'dashboard.php';
+                console.log("Response:", response); // Check the response in the console
+                
+                if(response.trim() === "login") { // Use trim() to remove any whitespace
+                    console.log("Success"); // Check if this message appears in the console
+                    window.location.href = 'dashboard.php';
+                } else {
+                    console.log("Login failed:", response); // Check if this message appears in case of failure
+                    $("#loginAlert").html(response);
+                }
+            },
+            error: function(xhr, status, error) {
+                console.log("Error:", error); // Check if there are any AJAX errors
             }
         });
         }
@@ -70,6 +72,7 @@ $(document).ready(function () {
                 method: "post",
                 data: $("#forget-form").serialize()+'&action=forgot',
                 success: function (response) {
+                    $("#forget-btn").val('Submit');
                     $("#forget-form")[0].reset();
                     $("#forgotAlert").html(response);
                 }
