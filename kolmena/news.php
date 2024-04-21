@@ -7,7 +7,7 @@
     <!-- Page Title -->
     <title>MegaOne | Latest News</title>
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="../kolmena/img/favcon.png">
     <!-- Bundle -->
     <link rel="stylesheet" href="../vendor/css/bundle.min.css">
     <!-- Plugin Css -->
@@ -65,7 +65,7 @@
     <!--Navigation-->
     <nav class="navbar navbar-top-default nav-radius navbar-expand-lg">
         <div class="container">
-            <a href="../index-kolmena.html" title="Logo" class="logo">
+            <a href="../index.php" title="Logo" class="logo">
                 <!--Logo Default-->
                 <img src="img/logo.png" alt="logo" class="logo-dark logo-default">
                 <img src="img/logo.png" alt="logo" class="logo-light logo-scrolled">
@@ -74,13 +74,13 @@
             <!--Nav Links-->
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav ml-250">
-                    <a class="nav-link" href="../index.html#home">Home</a>
-                    <a class="nav-link" href="../index.html#about">About</a>
-                    <a class="nav-link" href=../index.html#work>Projects</a>
-                    <a class="nav-link" href="../index.html#news">Blog</a>
-                    <a class="nav-link active" href="news.html">Service</a>
-                    <a class="nav-link" href="../index.html#contactus">Contact</a>
-                    <a class="nav-link" href="../home-page3.html">Product</a>
+                    <a class="nav-link" href="../index.php#home">Home</a>
+                    <a class="nav-link" href="../index.php#about">About</a>
+                    <a class="nav-link" href=../index.php#work>Projects</a>
+                    <a class="nav-link" href="../index.php#news">Blog</a>
+                    <a class="nav-link active" href="news.php">Service</a>
+                    <a class="nav-link" href="../index.php#contactus">Contact</a>
+                    <a class="nav-link" href="../home-page3.php">Product</a>
                 </div>
 
             </div>
@@ -104,19 +104,22 @@
             <nav class="side-nav w-100">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index-kolmena.html">Home</a>
+                        <a class="nav-link" href="../index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
+                        <a class="nav-link" href="../index.php#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#work">Projects</a>
+                        <a class="nav-link" href="../index.php#work">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="news.html">Blog</a>
+                        <a class="nav-link" href="../index.phpnews.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactus">Contact Us</a>
+                        <a class="nav-link" href="news.php">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.php#contactus">Contact Us</a>
                     </li>
                 </ul>
             </nav>
@@ -140,8 +143,8 @@
 <br>
    <!-- design -->
    <section class = "design" id = "design">
-    <div class = "container">
-        <a href="news.html#heating" class="form-control btn btn-green font-weight-bold check scroll">Flat Plate Solar Water Heater</a>
+    <div class = "container" id="hybrid">
+        <a href="news.php#heating" class="form-control btn btn-green font-weight-bold check scroll">Flat Plate Solar Water Heater</a>
         <a href="service-details.php" class="form-control btn btn-green font-weight-bold check">Evacuated Tube Collector</a>
       <div class = "title">
         <h2>SERVICES</h2>

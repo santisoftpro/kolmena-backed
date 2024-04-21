@@ -224,7 +224,7 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 9; letter-spacing: .5px;"><a class="btn btn-green btn btn btn-large btn-rounded" href="home-page3.php">Click to buy</a></div>
+                         style="z-index: 9; letter-spacing: .5px;"><a class="btn btn-green btn btn btn-large btn-rounded" href="home-page3.php#product">Click to buy</a></div>
                 </li>
                     <!-- SLIDE  -->
                 <li data-index="rs-2" data-transition="crossfade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-thumb="images/slide-img2.jpg"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -375,7 +375,7 @@
                          data-paddingbottom="[0,0,0,0]"
                          data-paddingleft="[0,0,0,0]"
 
-                         style="z-index: 9; letter-spacing: .5px;"><a class="btn btn-green btn btn-large btn-rounded" href="home-page3.php">Buy Now</a></div>
+                         style="z-index: 9; letter-spacing: .5px;"><a class="btn btn-green btn btn-large btn-rounded" href="home-page3.php#product">Buy Now</a></div>
                 </li>
             </ul>
         </div>

@@ -7,7 +7,7 @@
     <!-- Page Title -->
     <title>MegaOne | Latest News</title>
     <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="../kolmena/img/favcon.png">
     <!-- Bundle -->
     <link rel="stylesheet" href="../vendor/css/bundle.min.css">
     <!-- Plugin Css -->
@@ -63,12 +63,14 @@
 
             <!--Nav Links-->
             <div class="collapse navbar-collapse">
-                <div class="navbar-nav ml-250">
-                    <a class="nav-link" href="../index-kolmena.html">Home</a>
-                    <a class="nav-link" href="#about">About Us</a>
-                    <a class="nav-link" href="#work">Projects</a>
-                    <a class="nav-link active" href="news.html">Blog</a>
-                    <a class="nav-link" href="#contactus">Contact Us</a>
+            <div class="navbar-nav ml-250">
+                    <a class="nav-link" href="../index.php#home">Home</a>
+                    <a class="nav-link" href="../index.php#about">About</a>
+                    <a class="nav-link" href=../index.php#work>Projects</a>
+                    <a class="nav-link" href="../index.php#news">Blog</a>
+                    <a class="nav-link active" href="news.php">Service</a>
+                    <a class="nav-link" href="../index.php#contactus">Contact</a>
+                    <a class="nav-link" href="../home-page3.php">Product</a>
                 </div>
 
             </div>
@@ -202,12 +204,12 @@
                         <div class="widget heading_space mb-lg-0">
                             <h4 class="darkcolor pb-10 align-left text-11 blue">Services</h4>
                             <ul class="webcats">
-                                <li><a class="a-recent" href="#.">On-Grid Power System</a></li>
-                                <li><a class="a-recent" href="#.">Off-Grid Power System</a></li>
-                                <li><a class="a-recent" href="#.">Hybrid Power System</a></li>
-                                <li><a class="a-recent" href="#.">Pico Power Sytem</a></li>
-                                <li><a class="a-recent" href="#.">Flat Plate Solar Water Heater</a></li>
-                                <li><a class="a-recent" href="#.">Pico Power Sytem</a></li>
+                                <li><a class="a-recent" href="service-details.php">On-Grid Power System</a></li>
+                                <li><a class="a-recent" href="service-details.php">Off-Grid Power System</a></li>
+                                <li><a class="a-recent" href="news.php#hybrid">Hybrid Power System</a></li>
+                                <li><a class="a-recent" href="news.php#hybrid">Pico Power Sytem</a></li>
+                                <li><a class="a-recent" href="news.php#heating">Flat Plate Solar Water Heater</a></li>
+                                <li><a class="a-recent" href="news.php#heating">Pico Power Sytem</a></li>
                             </ul>
                         </div>
                     </aside>
@@ -218,25 +220,51 @@
         </div>
     </div>
 </section>
+
+<!--about section-->
+<section class="about bg-light" id="about">
+    <h2 class="d-none">heading</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pr-5 wow fadeInLeft">
+                <div class="rare-box"></div>
+                <img src="new-image/Pasted image 12.png" class="image-about position-relative w-100" alt="">
+            </div>
+            <div class="col-lg-6 pl-6 center-about">
+                
+                <h2 class="wow fadeInUp text-capitalize font-42" data-wow-delay="400ms">FRAME COMPONENTS & STRUCTURE</h2>
+                <p class="pt-3 wow fadeInUp about-p" data-wow-delay="500ms">Frame Attachment to Roof</p>
+                <ul class="pl-0 pt-2 left-about wow fadeInUp bg-grey" data-wow-delay="600ms">
+                    <li>Select a suitable location on the roof for the collector. In the northern hemisphere, the collector should face due south, at an angle to the ground equal to the latitude. For example, latitude of 49 degrees would use a collector angle of about 49 degrees.</li>
+                    <li>Remove roof tiles at the corners of an area large enough to fit the collector (2).</li>
+                    <li>Secure a stainless steel band to a rafter using coach screws and washers (3).</li>
+                    <li>Replace the roof tiles, leaving the band protruding (4).</li>
+                    <li>Secure the collector frame to the bands.</li>
+                </ul>
+                <a href="../home-page3.php#product" class="btn btn-rounded btn-large btn btn-green-orange text-capitalize mt-30">Buy Products</a>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- our client end -->
   <!-- blog -->
   <section class = "blog" id = "blog">
         <div class = "container">
-          <div class = "title">
+          <!-- <div class = "title">
             <h2>Solar Heating System</h2>
             <p>Flat Plate Solar Water Heater</p>
-          </div>
+          </div> -->
           <div class = "blog-content">
             <!-- item -->
             <div class = "blog-item">
               <div class = "blog-img">
-                <img src = "new-image/Pasted image 4.png" alt = "">
+                <img src = "new-image/Pasted image 13.png" alt = "">
                 <span><i class = "far fa-heart"></i></span>
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
                 <h2>Title here</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+                <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p> -->
                 <!-- <a href = "#">Read More</a> -->
               </div>
             </div>
@@ -244,13 +272,13 @@
             <!-- item -->
             <div class = "blog-item">
               <div class = "blog-img">
-                <img src = "new-image/Pasted image 5.png" alt = "">
+                <img src = "new-image/Pasted image 14.png" alt = "">
                 <span><i class = "far fa-heart"></i></span>
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
                 <h2>Tittle Here</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+                <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p> -->
                 <!-- <a href = "#">Read More</a> -->
               </div>
             </div>
@@ -258,13 +286,13 @@
             <!-- item -->
             <div class = "blog-item">
               <div class = "blog-img">
-                <img src = "new-image/Pasted image 6.png" alt = "">
+                <img src = "new-image/Pasted image 15.png" alt = "">
                 <span><i class = "far fa-heart"></i></span>
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
                 <h2>Tittle Here</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+                <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p> -->
                 <!-- <a href = "#">Read More</a> -->
               </div>
             </div>
@@ -272,34 +300,17 @@
             <!-- item -->
             <div class = "blog-item">
               <div class = "blog-img">
-                <img src = "new-image/Pasted image 7.png" alt = "">
+                <img src = "new-image/Pasted image 16.png" alt = "">
                 <span><i class = "far fa-heart"></i></span>
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
                 <h2>Tittle Here</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+                <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p> -->
                 <!-- <a href = "#">Read More</a> -->
               </div>
             </div>
-            <!-- end of item -->
-            <!-- item -->
-            <div class = "blog-item">
-              <div class = "blog-img">
-                <img src = "new-image/Pasted image 8.png" alt = "">
-                <span><i class = "far fa-heart"></i></span>
-              </div>
-              <div class = "blog-text">
-                <!-- <span>20 January, 2020</span> -->
-                <h2>Tittle Here</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
-                <!-- <a href = "#">Read More</a> -->
-              </div>
-            </div>
-            <!-- end of item -->
-            <!-- item -->
-           
-            <!-- end of item -->
+         
              
           </div>
         </div>

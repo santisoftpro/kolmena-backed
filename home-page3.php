@@ -66,11 +66,11 @@ session_start();
         <div class="collapse navbar-collapse">
             <div class="navbar-nav ml-250">
                 <a class="nav-link" href="index.php">Home</a>
-                <a class="nav-link" href="index.php#about">About Us</a>
+                <a class="nav-link" href="index.php#about">About</a>
                 <a class="nav-link" href=index.php#work>Projects</a>
                 <a class="nav-link" href="index.php#news">Blog</a>
                 <a class="nav-link" href="kolmena/news.php">Service</a>
-                <a class="nav-link" href="index.php#contactus">Contact Us</a>
+                <a class="nav-link" href="index.php#contactus">Contact</a>
                 <a class="nav-link active" href="home-page3.php">Product</a>
             </div>
 
@@ -93,30 +93,26 @@ session_start();
     <div class="inner-wrapper">
         <span class="btn-close link" id="btn_sideNavClose"></span>
         <nav class="side-nav w-100">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php#about">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php#work">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php#news">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="kolmena/news.php">Services</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php#contactus">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="home-page3.php">Product</a>
-                </li>
-            </ul>
+        <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.php#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.php#work">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.phpnews.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.php">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.php#contactus">Contact Us</a>
+                    </li>
+         </ul>
         </nav>
 
         <div class="side-footer text-white w-100">
@@ -250,7 +246,7 @@ session_start();
             </div>
         </div>
         <div class="spaces"></div>
-        <div class="row">
+        <div class="row scroll" id="product">
             <div class="col-md-12">
                 <p class="accessories-tittle ">All Products</p>
             </div>
