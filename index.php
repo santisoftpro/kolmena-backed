@@ -79,10 +79,11 @@
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav ml-250">
                     <a class="nav-link scroll" href="#home">Home</a>
-                    <a class="nav-link scroll" href="#about">About Us</a>
+                    <a class="nav-link scroll" href="#about">About</a>
                     <a class="nav-link scroll" href=#work>Projects</a>
                     <a class="nav-link scroll" href="#news">Blog</a>
-                    <a class="nav-link scroll" href="#contactus">Contact Us</a>
+                    <a class="nav-link" href="kolmena/news.php">Service</a>
+                    <a class="nav-link scroll" href="#contactus">Contact</a>
                     <a class="nav-link" href="home-page3.php">Product</a>
                 </div>
 
@@ -117,6 +118,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#news">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kolmena/news.php">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link scroll" href="#contactus">ContactUs</a>

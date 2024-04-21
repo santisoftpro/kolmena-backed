@@ -69,6 +69,7 @@ session_start();
                 <a class="nav-link" href="index.php#about">About Us</a>
                 <a class="nav-link" href=index.php#work>Projects</a>
                 <a class="nav-link" href="index.php#news">Blog</a>
+                <a class="nav-link" href="kolmena/news.php">Service</a>
                 <a class="nav-link" href="index.php#contactus">Contact Us</a>
                 <a class="nav-link active" href="home-page3.php">Product</a>
             </div>
@@ -105,6 +106,10 @@ session_start();
                 <li class="nav-item">
                     <a class="nav-link" href="index.php#news">Blog</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kolmena/news.php">Services</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="index.php#contactus">Contact Us</a>
                 </li>
