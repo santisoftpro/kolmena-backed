@@ -16,6 +16,12 @@
     <link rel="icon" href="kolmena/img/favcon.png">
     <!-- Bundle -->
     <link rel="stylesheet" href="vendor/css/bundle.min.css">
+    <link rel="icon" type="image/png" href="assets/images/niche-star.png"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css'>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" rel="stylesheet"/>
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
+   
     <!-- Plugin Css -->
     <link rel="stylesheet" href="vendor/css/revolution-settings.min.css">
     <link rel="stylesheet" href="vendor/css/jquery.fancybox.min.css">
@@ -545,212 +551,198 @@
 </section>
 <!--End Parallax Section-->
 
+
+<!--End Team Section-->
 <!--Team Section-->
-<section id="team" class="#team-slider">
+<section class="about bg-light #team-slider" id="team">
     <div class="container">
-        <!--Heading-->
-        <div class="row wow fadeIn">
-            <div class="col-md-12 text-center">
-                <div class="title d-inline-block">
-                    <h5 class="mb-3 blue mb-20 text-capitalize">Heros Behind the Company</h2>
-                    <h2 class="mb-3 mb-20 text-capitalize gradient-text1">Meet Our Team</h5> 
-                    <p class="margin-30 text-width">EXECUTIVE COMMITTEE </p>
-                </div>
-            </div>
-        </div>
-
-        <!--Team-->
+       
+        <div class="spaces"></div>
         <div class="row">
-            <div class="col-sm-12">
-                <div id="team-slider" class="owl-carousel owl-theme wow fadeInUp">
-                    <!--Team Item-->
-                    <div class="team-box item">
-                        <!--Team Image-->
-                        <div class="team-image">
-                            <img src="kolmena/img/team1.jpeg" alt="image">
-                            <!--Team Overlay-->
-                            <div class="overlay center-block">
-                                <!--Team Social-->
-                                <!-- <ul class="team-social p-0">
-                                    <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li>
-                                </ul> -->
+            <div class="col-md-12">
+                <p class="accessories-tittle ">Meet Our Team</p>
+            </div>
+            <br>
+            <br>
+            <div class="col-md-12">
+                <div class="discovers-grid">
+                    <a href="#">
+                        <figure>
+                            <div class="image-icons">
+                                <img src="kolmena/img/team1.jpeg" />
+                                <!-- <i class="far fa-heart heart-icon"></i>
+                                <i class="far fa-star star-icon"></i>
+                                <i class="fas fa-share-alt share-icon"></i> -->
+                                <!-- <button class="cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button> -->
                             </div>
-                        </div>
-                        <!--Team Text-->
-                        <div class="team-text">
-                            <h3 class="text-capitalize">Imanishimwe Stalone</h3>
-                            <span class="alt-font text-capitalize">HUMAN RESOURCE</span>
-                        </div>
-                      
-                    </div>
-                    <!--Team Item-->
-                    <div class="team-box item">
-                        <!--Team Image-->
-                        <div class="team-image">
-                            <img src="kolmena/img/team2.jpeg" alt="image">
-                            <!--Team Overlay-->
-                            <div class="overlay center-block">
-                                <!--Team Social-->
-                                <ul class="team-social p-0">
-                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
-                                </ul>
+                            <figcaption class="discover-caption">
+                                <p class="discover-subtitle">Human Resources</p>
+                                <p class="discover-title">Imanishimwe Stalone</p>
+                                
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <div class="image-icons">
+                                <img src="kolmena/img/team2.jpeg" />
+                                <!-- <i class="far fa-heart heart-icon"></i>
+                                <i class="far fa-star star-icon"></i>
+                                <i class="fas fa-share-alt share-icon"></i> -->
+                                <!-- <button class="cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button> -->
                             </div>
-                        </div>
-                        <!--Team Text-->
-                        <div class="team-text">
-                            <h3 class="text-capitalize">Eng.Mubera Sosthene</h3>
-                            <span class="alt-font text-capitalize">CEO</span>
-                        </div>
-                       
-                    </div>
-                    <!--Team Item-->
-                    <div class="team-box item">
-                        <!--Team Image-->
-                        <div class="team-image">
-                            <img src="kolmena/img/team3.jpeg" alt="image">
-                            <!--Team Overlay-->
-                            <div class="overlay center-block">
-                                <!--Team Social-->
-                                <ul class="team-social p-0">
-                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
-                                </ul>
+                            <figcaption class="discover-caption">
+                                <p class="discover-subtitle">CEO</p>
+                                <p class="discover-title">Eng.Mubera Sosthene</p>
+                               
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <div class="image-icons">
+                                <img src="kolmena/img/team3.jpeg"/>
+                                <!-- <i class="far fa-heart heart-icon"></i>
+                                <i class="far fa-star star-icon"></i>
+                                <i class="fas fa-share-alt share-icon"></i> -->
+                                <!-- <button class="cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button> -->
                             </div>
-                        </div>
-                        <!--Team Text-->
-                        <div class="team-text">
-                            <h3 class="text-capitalize">UWISHIMYE DIEUDONNE</h3>
-                            <span class="alt-font text-capitalize">CHIEF DRIVER</span>
-                        </div>
-                     
-                    </div>
-                    <!--Team Item-->
-                    <div class="team-box item">
-                        <!--Team Image-->
-                        <div class="team-image">
-                            <img src="kolmena/img/team4.jpeg" alt="image">
-                            <!--Team Overlay-->
-                            <div class="overlay center-block">
-                                <!--Team Social-->
-                                <ul class="team-social p-0">
-                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
-                                </ul>
+                            <figcaption class="discover-caption">
+                                <p class="discover-subtitle">CHIEF DRIVER</p>
+                                <p class="discover-title">UWISHIMYE DIEUDONNE</p>
+                               
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <div class="image-icons">
+                                <img src="kolmena/img/team4.jpeg"/>
+                                <!-- <i class="far fa-heart heart-icon"></i>
+                                <i class="far fa-star star-icon"></i>
+                                <i class="fas fa-share-alt share-icon"></i>
+                                <button class="cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button> -->
                             </div>
-                        </div>
-                        <!--Team Text-->
-                        <div class="team-text">
-                            <h3 class="text-capitalize">Janviere Ibyishatse</h3>
-                            <span class="alt-font text-capitalize">ACCOUNTANT</span>
-                        </div>
-                      
-                    </div>
-                    <!--Team Item-->
-                    <div class="team-box item">
-                        <!--Team Image-->
-                        <div class="team-image">
-                            <img src="kolmena/img/team6.jpeg" alt="image">
-                            <!--Team Overlay-->
-                            <div class="overlay center-block">
-                                <!--Team Social-->
-                                <ul class="team-social p-0">
-                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
-                                </ul>
+                            <figcaption class="discover-caption">
+                                <p class="discover-subtitle">ACCOUNTANT</p>
+                                <p class="discover-title">Janviere Ibyishatse</p>
+                              
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <div class="image-icons">
+                                <img src="kolmena/img/team6.jpeg"/>
+                                <!-- <i class="far fa-heart heart-icon"></i>
+                                <i class="far fa-star star-icon"></i>
+                                <i class="fas fa-share-alt share-icon"></i>
+                                <button class="cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button> -->
                             </div>
-                        </div>
-                        <!--Team Text-->
-                        <div class="team-text">
-                            <h3 class="text-capitalize">Niyonkuru Samuel</h3>
-                            <span class="alt-font text-capitalize">CHIEF TECHNICIAN</span>
-                        </div>
-                      
-                    </div>
-
-                    <!--Team Item-->
-                    <div class="team-box item">
-                        <!--Team Image-->
-                        <div class="team-image">
-                            <img src="kolmena/img/team5.jpeg" alt="image">
-                            <!--Team Overlay-->
-                            <div class="overlay center-block">
-                                <!--Team Social-->
-                                <ul class="team-social p-0">
-                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
-                                </ul>
+                            <figcaption class="discover-caption">
+                                <p class="discover-subtitle">CHIEF TECHNICIAN</p>
+                                <p class="discover-title">Niyonkuru Samuel</p>
+                              
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <div class="image-icons">
+                                <img src="kolmena/img/team5.jpeg"/>
+                                <!-- <i class="far fa-heart heart-icon"></i>
+                                <i class="far fa-star star-icon"></i>
+                                <i class="fas fa-share-alt share-icon"></i>
+                                <button class="cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button> -->
                             </div>
-                        </div>
-                        <!--Team Text-->
-                        <div class="team-text">
-                            <h3 class="text-capitalize">Mujyambere Abdallah</h3>
-                            <span class="alt-font text-capitalize">MARKETING</span>
-                        </div>
-                      
-                    </div>
-                 <!--Team Item-->
-                 <div class="team-box item">
-                        <!--Team Image-->
-                        <div class="team-image">
-                            <img src="kolmena/img/team7.jpeg" alt="image">
-                            <!--Team Overlay-->
-                            <div class="overlay center-block">
-                                <!--Team Social-->
-                                <ul class="team-social p-0">
-                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
-                                </ul>
+                            <figcaption class="discover-caption">
+                                <p class="discover-subtitle">MARKETING</p>
+                                <p class="discover-title">Mujyambere Abdallah</p>
+                              
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <div class="image-icons">
+                                <img src="kolmena/img/team7.jpeg"/>
+                                <!-- <i class="far fa-heart heart-icon"></i>
+                                <i class="far fa-star star-icon"></i>
+                                <i class="fas fa-share-alt share-icon"></i>
+                                <button class="cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button> -->
                             </div>
-                        </div>
-                        <!--Team Text-->
-                        <div class="team-text">
-                            <h3 class="text-capitalize">USANASE ALINE</h3>
-                            <span class="alt-font text-capitalize">RECEPTIONIST</span>
-                        </div>
-                      
-                    </div>
-                     <!--Team Item-->
-                 <div class="team-box item">
-                        <!--Team Image-->
-                        <div class="team-image">
-                            <img src="kolmena/img/team8.jpeg" alt="image">
-                            <!--Team Overlay-->
-                            <div class="overlay center-block">
-                                <!--Team Social-->
-                                <ul class="team-social p-0">
-                                    <!-- <li><a class="facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li><a class="twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li><a class="instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li><a class="pinterest-bg-hvr" href="javascript:void(0);"><i class="fab fa-pinterest-p" aria-hidden="true"></i></a></li> -->
-                                </ul>
+                            <figcaption class="discover-caption">
+                                <p class="discover-subtitle">RECEPTIONIST</p>
+                                <p class="discover-title">USANASE ALINE</p>
+                              
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <div class="image-icons">
+                                <img src="kolmena/img/team8.jpeg"/>
+                                <!-- <i class="far fa-heart heart-icon"></i>
+                                <i class="far fa-star star-icon"></i>
+                                <i class="fas fa-share-alt share-icon"></i>
+                                <button class="cart-btn">Add to Cart <i class="fas fa-shopping-cart"></i></button> -->
                             </div>
-                        </div>
-                        <!--Team Text-->
-                        <div class="team-text">
-                            <h3 class="text-capitalize">MUKWINDI ANGE</h3>
-                            <span class="alt-font text-capitalize">PUBLIC RELATION</span>
-                        </div>
-                      
-                    </div>
+                            <figcaption class="discover-caption">
+                                <p class="discover-subtitle">PUBLIC RELATION</p>
+                                <p class="discover-title">MUKWINDI ANGE</p>
+                              
+                            </figcaption>
+                        </figure>
+                    </a>
                 </div>
             </div>
         </div>
+       
+        <div class="spaces1"></div>
+     
+        <div class="spaces1"></div>
+		<div class="row">
+            <div class="col-md-12">
+                <p class="section-title4 ml-2">Our Panel</p>
+			</div>
+			<div class="col-md-12">
+				<div class="items-grid1">
+					<a href="#">
+						<figure>
+							<img src="kolmena/img/Pasted image.png" class="rounded-circle"/>
+							<figcaption class="item-caption">BRD</figcaption>
+						</figure>
+					</a>
+					<a href="#">
+						<figure>
+							<img src="kolmena/img/Pasted image 1.png" class="rounded-circle"/>
+							<figcaption class="item-caption">EDCL</figcaption>
+                        </figure>
+                    </a>
+                    <a href="#">
+						<figure>
+							<img src="kolmena/img/Pasted image 2.png" class="rounded-circle"/>
+							<figcaption class="item-caption">EPD</figcaption>
+						</figure>
+						</a>
+                    </a>
+                    <a href="#">
+						<figure>
+							<img src="kolmena/img/Pasted image 3.png" class="rounded-circle"/>
+							<figcaption class="item-caption">ASTEVEN</figcaption>
+						</figure>
+					</a>
+				 
+					
+					<a href="#">
+						<figure>
+						</figure>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
     </div>
 </section>
 <!--End Team Section-->
