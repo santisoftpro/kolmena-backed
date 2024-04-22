@@ -153,8 +153,8 @@
 </div>
 </div>
 <hr class="m-0">
-<a class="dropdown-item" href="profile.php"> <i class="me-2" data-feather="user"></i> My Profile</a>
-<a class="dropdown-item" href="generalsettings.html"><i class="me-2" data-feather="settings"></i>Settings</a>
+<a class="dropdown-item" href="../index.php"> <i class="me-2" data-feather="user"></i>Visit Site</a>
+<!-- <a class="dropdown-item" href="generalsettings.html"><i class="me-2" data-feather="settings"></i>Settings</a> -->
 <hr class="m-0">
 <a class="dropdown-item logout pb-0" href='./assets/php/logout.php'><img src="assets/img/icons/log-out.svg" class="me-2" alt="img">Logout</a>
 </div>
@@ -166,8 +166,8 @@
 <div class="dropdown mobile-user-menu">
 <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
 <div class="dropdown-menu dropdown-menu-right">
-<a class="dropdown-item" href="profile.php">My Profile</a>
-<a class="dropdown-item" href="generalsettings.php">Settings</a>
+<a class="dropdown-item" href="../index.php">Visit site</a>
+<!-- <a class="dropdown-item" href="generalsettings.php">Settings</a> -->
 <a class="dropdown-item" href="signin.php">Logout</a>
 </div>
 </div>
