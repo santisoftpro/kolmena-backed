@@ -85,6 +85,7 @@
                     <a class="nav-link" href="kolmena/news.php">Service</a>
                     <a class="nav-link scroll" href="#contactus">Contact</a>
                     <a class="nav-link" href="home-page3.php">Product</a>
+                   
                 </div>
 
             </div>
@@ -99,6 +100,7 @@
                 </div>
             </a>
         </div>
+      
     </nav>
 
     <!--Side Nav-->
@@ -143,6 +145,7 @@
         </div>
     </div>
     <a id="close_side_menu" href="javascript:void(0);"></a>
+    
     <!-- End side menu -->
 </header>
 <!--Header end-->
@@ -150,6 +153,21 @@
 <!--Rev Slider-->
 <section class="bg-white pb-0 about-banner" id="home">
     <h2 class="d-none">heading</h2>
+    <!-- <div class="container-fulid">
+        <div class="row justify-content-center">
+            <form class="form-inline search-form">
+                   
+                <div class="input-group rounded-pill form-input justify-content-center">
+                    <div class="input-group-prepend border-0">
+                      <button id="button-addon4" type="button" class="btn btn-link text-info"><i class="fa fa-search search-icon"></i></button>
+                    </div>
+                    <input type="text" aria-describedby="button-addon4" class="form-control bg-none border-0 text-black" id="getData">
+                  </div>
+              </form>
+            
+          </div>
+    </div> -->
+    <br>
     <div id="rev_slider_19_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="wexim_slider_01" data-source="gallery" style="background:transparent;padding:0px;">
         <!-- START REVOLUTION SLIDER 5.4.8.1 fullscreen mode -->
         <div id="rev_slider_19_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8.1">
@@ -499,7 +517,7 @@
 <!--Blog End-->
 
 <!--Counter start-->
-<section class="counter">
+<section class="counter" id="archievemrnt">
     <div class="container">
         <div class="row">
             <div class="col-md-5 wow fadeInLeft">
@@ -544,7 +562,7 @@
 <!--Counter end-->
 
 <!--Parallax Section-->
-<section class="parallex-section parallax parallaxie index-1 section-padding p-0 m-25">
+<section class="parallex-section parallax parallaxie index-1 section-padding p-0 m-25" id="areyou">
     <div class="section-padding">
         <div class="col-lg-12 text-center text-rotate">
             <p class="parallex-para text-center text-white">ARE YOU LOOKING FOR AN INSTALLER</p>
@@ -568,7 +586,7 @@
             </div>
             <br>
             <br>
-            <div class="col-md-12">
+            <div class="col-md-12" id="show product">
                 <div class="discovers-grid">
                     <a href="#">
                         <figure>
@@ -751,6 +769,28 @@
 </section>
 <!--End Team Section-->
 
+<!--Team Section-->
+<section class="about bg-light #team-slider" id="searched">
+    <div class="container">
+       
+        <div class="spaces"></div>
+        <div class="row">
+           
+            <br>
+            <br>
+            <div class="col-md-12" id="show product">
+                <div class="discovers-grid" id="showProduct">
+                 
+                </div>
+            </div>
+        </div>
+       
+
+			
+	
+
+    </div>
+</section>
 <!--work section-->
 <section class="work-section portfolio-three" id="work">
     <div class="container">
@@ -946,7 +986,7 @@
 <!--Pricing End Start-->
 
 <!--Testimonial-->
-<section id="client" class="testimonial bg-white">
+<section id="client" class="testimonial bg-white" id="testimonial">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -1028,7 +1068,7 @@
 <!--End Testimonial-->
 
 <!-- our client -->
-<section class="our-client">
+<section class="our-client" id="client">
     <h2 class="d-none" aria-hidden="true">slider</h2>
     <div class="container">
         <div class="row">
@@ -1067,7 +1107,7 @@
 <!-- our client end -->
 
 <!-- Contact Start -->
-<section class="p-0 bg-light">
+<section class="p-0 bg-light" id="location">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
@@ -1228,7 +1268,29 @@
 <script src="https://maps.googleapis.com/maps/api/geocode/json?latlng=-1.9567151,30.1155371&key=AIzaSyC6PLYoPLUohNQQFZUL9Ap-xcS_trAivfQ"></script>
 <script src="kolmena/js/maps.min.js"></script>
 <script src="kolmena/js/script.js"></script>
-
+<script>
+    $(document).ready(function () {
+        $("#getData").on('keyup', function () {
+            var getName = $(this).val();
+            $.ajax({
+                type: "POST",
+                url: "fetch/fetch_products.php",
+                data: {name:getName},
+                success: function (response) {
+                    $("#showProduct").html(response);
+                    $("#location").hide();
+                    $("#contactus").hide();
+                    $("#client").hide();
+                    $("#work").hide();
+                    $("#team").hide();
+                    $("#areyou").hide();
+                    $("#news").hide();
+                    $("#about").hide();
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
 

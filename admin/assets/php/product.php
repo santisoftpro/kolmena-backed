@@ -51,11 +51,11 @@ class Product extends Database {
             return false;
         }
     }
-    public function updateProduct($id, $productName, $category, $power, $price, $description, $images)
+    public function updateProduct($id, $productName, $category, $power, $price, $description)
     
     {
         try {
-           $sql = "UPDATE `posts` SET `productName`=:productName,`category`=:category,`power`=:power,`price`=:price,`description`=:description,`images`=:images WHERE `product_id` =:id ";
+           $sql = "UPDATE `posts` SET `productName`=:productName,`category`=:category,`power`=:power,`price`=:price,`description`=:description WHERE `product_id` =:id ";
            $stmt = $this->conn->prepare($sql);
            $stmt->execute([
             "id"=> $id,
@@ -63,8 +63,7 @@ class Product extends Database {
             'category' => $category,
             'power' => $power,
             'price' => $price,
-            'description' => $description,
-            'images' => $images
+            'description' => $description
         ]);
         return true;
         } catch (PDOException $e) {

@@ -1,3 +1,27 @@
+<?php
+require_once('./mysqli/db.php');
+
+$id = $_GET['id'];
+if(!empty($id) )
+{
+    $sql = "SELECT * FROM posts WHERE product_id = '$id'";
+    $result = mysqli_query($conn,$sql);
+    foreach($result as $row)
+    {
+        $id = $row['product_id'];
+        $name = $row['productName'];
+        $category = $row['category'];
+        $power = $row['power'];
+        $price = $row['price'];
+        $description = $row['description'];
+
+    }
+}
+else{
+    header("Location: productlist.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,7 +105,7 @@ include_once './include_pages/header.php'
     </div>
 
 <div class="page-wrapper">
-<form  method="post" id="update-form">
+<form action="assets/php/function.php"  method="post" id="update-form">
 <div class="content">
 <div class="page-header">
 <div class="page-title">
@@ -96,36 +120,37 @@ include_once './include_pages/header.php'
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
 <label>Product Name</label>
-<input type="text" name="productName" id="productName" value="">
+<input type="hidden" name="productId" id="productId" value="<?=$id?>">
+<input type="text" name="productName" id="productName" value="<?=$name?>">
 </div>
 </div>
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
 <label>Category</label>
-<input type="text" name="category" id="category" value="">
+<input type="text" name="category" id="category" value="<?=$category?>">
 </div>
 </div>
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
 <label>Power</label>
-<input type="text" name="power" id="power" value="">
+<input type="text" name="power" id="power" value="<?=$power?>">
 </div>
 </div>
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
 <label>Price</label>
-<input type="text" name="price" id="price" value="">
+<input type="text" name="price" id="price" value="<?=$price?>">
 </div>
 </div>
 
 <div class="col-lg-12">
 <div class="form-group">
 <label>Description</label>
-<textarea class="form-control" name="description" id="description"></textarea>
+<textarea class="form-control" name="description" id="description"><?=$description?></textarea>
 </div>
 </div>
 
-<div class="col-lg-12">
+<!-- <div class="col-lg-12">
 <div class="form-group">
 <label> Product Image</label>
 <div class="image-upload">
@@ -136,8 +161,8 @@ include_once './include_pages/header.php'
 </div>
 </div>
 </div>
-</div>
-<div class="col-12">
+</div> -->
+<!-- <div class="col-12">
 <div class="product-list">
 <ul class="row">
 <li>
@@ -156,9 +181,9 @@ include_once './include_pages/header.php'
 </li>
 </ul>
 </div>
-</div>
+</div> -->
 <div class="col-lg-12">
-<a href="javascript:void(0);" class="btn btn-submit me-2">Update</a>
+<button type="submit" name="updateProduct" href="javascript:void(0);" class="btn btn-submit me-2">Update</button>
 <a href="productlist.html" class="btn btn-cancel">Cancel</a>
 </div>
 </div>

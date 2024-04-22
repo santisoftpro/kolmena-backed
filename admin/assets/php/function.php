@@ -57,5 +57,21 @@ if(isset($_POST['productInsert']))
     }
 }
 
+if(isset($_POST['updateProduct']))
+{
+    $id = $_POST['productId'];
+    $productName = $_POST['productName'];
+    $category = $_POST['category'];
+    $power = $_POST['power'];
+    $price = $_POST['price'];
+    $description = $_POST['description'];
 
+    if($product->updateProduct($id, $productName, $category, $power, $price, $description))
+    {
+        header("Location: ../../productlist.php");
+    }
+    else {
+        echo $user->showMessage('danger', 'Something went wrong');
+    }
+}
 ?>
