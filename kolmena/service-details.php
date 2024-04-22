@@ -204,10 +204,9 @@
                         <div class="widget heading_space mb-lg-0">
                             <h4 class="darkcolor pb-10 align-left text-11 blue">Services</h4>
                             <ul class="webcats">
-                                <li><a class="a-recent" href="service-details.php">On-Grid Power System</a></li>
-                                <li><a class="a-recent" href="service-details.php">Off-Grid Power System</a></li>
+                                <li><a class="a-recent" href="news.php#ongrid">On-Grid Power System</a></li>
+                                <li><a class="a-recent" href="news.php#offgrid">Off-Grid Power System</a></li>
                                 <li><a class="a-recent" href="news.php#hybrid">Hybrid Power System</a></li>
-                                <li><a class="a-recent" href="news.php#hybrid">Pico Power Sytem</a></li>
                                 <li><a class="a-recent" href="news.php#heating">Flat Plate Solar Water Heater</a></li>
                                 <li><a class="a-recent" href="news.php#heating">Pico Power Sytem</a></li>
                             </ul>

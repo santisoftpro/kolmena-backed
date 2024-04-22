@@ -247,8 +247,8 @@
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
-                <h2>Title here</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+                <h2>Solar Heating System</h2>
+                <p>Flat plate collectors can heat the fluid inside using either direct or indirect sunlight from a wide range of different angles.</p>
                 <!-- <a href = "#">Read More</a> -->
               </div>
             </div>
@@ -261,8 +261,8 @@
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
-                <h2>Tittle Here</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+                <h2>Flat Plate Collector</h2>
+                <p>A direct solar water heating system, also known as an active open-loop system, uses a pump to circulate the water around the system.</p>
                 <!-- <a href = "#">Read More</a> -->
               </div>
             </div>
@@ -275,8 +275,8 @@
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
-                <h2>Tittle Here</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+                <h2>Flat Plate Collector on Roof</h2>
+                <p>These copper pipes are bonded, soldered or brazed directly to the absorber plate to ensure maximum surface contact and heat transfer.</p>
                 <!-- <a href = "#">Read More</a> -->
               </div>
             </div>
@@ -289,8 +289,8 @@
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
-                <h2>Tittle Here</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+                <h2>Hybrid Water Heating System</h2>
+                <p>In many cases, technology is not yet sufficiently developed to feed a hot water installation entirely with sustainable energy. </p>
                 <!-- <a href = "#">Read More</a> -->
               </div>
             </div>
@@ -303,8 +303,8 @@
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
-                <h2>Tittle Here</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+                <h2>Solar Thermal System</h2>
+                <p>The heat exchanger transfers the heat from the collector’s antifreeze solution to the water located in the water storage tank.</p>
                 <!-- <a href = "#">Read More</a> -->
               </div>
             </div>
@@ -317,8 +317,8 @@
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
-                <h2>Tittle Here</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+                <h2>solar water heater</h2>
+                <p>SGE is a condensing HE solar water heater with integrated heat exchanger for solar energy. </p>
                 <!-- <a href = "#">Read More</a> -->
               </div>
             </div>
@@ -329,7 +329,48 @@
       </section>
       <!-- end of blog -->
 
+<!--on grid section-->
+<section class="about bg-light" id="ongrid">
+    <h2 class="d-none">heading</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pr-5 wow fadeInLeft">
+                <div class="rare-box"></div>
+                <img src="new-image/Pasted image 17.png" class="image-about position-relative w-100" alt="">
+            </div>
+            <div class="col-lg-6 pl-6 center-about">
+                
+                <h2 class="wow fadeInUp text-capitalize font-42" data-wow-delay="400ms">On-Grid Power System</h2>
+                <p class="pt-3 wow fadeInUp about-p" data-wow-delay="500ms">On-grid solar systems, also known as grid-tied systems, connect to the electric grid. They provide a reliable power source, supplementing grid power and—in some areas—even feeding unused energy back to the grid through net metering. Grid access is useful when your photovoltaic (PV) solar panels are not producing enough energy or when the batteries that store unused solar power have been depleted and need time to recharge. </p>
+            
+                <a href="../home-page3.php#product" class="btn btn-rounded btn-large btn btn-green-orange text-capitalize mt-30">Buy Products</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- on grid end -->
 
+<!--off grid section-->
+<section class="about bg-light" id="offgrid">
+    <h2 class="d-none">heading</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pr-5 wow fadeInLeft">
+                <div class="rare-box"></div>
+                <img src="new-image/Pasted image 18.png" class="image-about position-relative w-100" alt="">
+            </div>
+            <div class="col-lg-6 pl-6 center-about">
+                
+                <h2 class="wow fadeInUp text-capitalize font-42" data-wow-delay="400ms">Pico Power Sytem</h2>
+                <p class="pt-3 wow fadeInUp about-p" data-wow-delay="500ms">Pico hydropower is the only form of small renewable energy production which works continuously without battery storage. Where applicable it is the most cost efficient solution to supply electrical energy. Pico turbines can provide power for small clusters or even single households
+Individual hydropower supply cuts out the efforts of organising a community. Identifying, planning and managing takes a higher proportion of the whole installation efforts as smaller a sites becomes. </p>
+            
+                <a href="../home-page3.php#product" class="btn btn-rounded btn-large btn btn-green-orange text-capitalize mt-30">Buy Products</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- off grid end -->
 <!--Footer Start-->
 <section class="text-center bg-blue m-0" id="heating">
     <h2 class="d-none">hidden</h2>

@@ -517,7 +517,7 @@
 <!--Blog End-->
 
 <!--Counter start-->
-<section class="counter" id="archievemrnt">
+<section class="counter" id="">
     <div class="container">
         <div class="row">
             <div class="col-md-5 wow fadeInLeft">
@@ -562,7 +562,7 @@
 <!--Counter end-->
 
 <!--Parallax Section-->
-<section class="parallex-section parallax parallaxie index-1 section-padding p-0 m-25" id="areyou">
+<section class="parallex-section parallax parallaxie index-1 section-padding p-0 m-25" id="">
     <div class="section-padding">
         <div class="col-lg-12 text-center text-rotate">
             <p class="parallex-para text-center text-white">ARE YOU LOOKING FOR AN INSTALLER</p>
@@ -770,27 +770,7 @@
 <!--End Team Section-->
 
 <!--Team Section-->
-<section class="about bg-light #team-slider" id="searched">
-    <div class="container">
-       
-        <div class="spaces"></div>
-        <div class="row">
-           
-            <br>
-            <br>
-            <div class="col-md-12" id="show product">
-                <div class="discovers-grid" id="showProduct">
-                 
-                </div>
-            </div>
-        </div>
-       
 
-			
-	
-
-    </div>
-</section>
 <!--work section-->
 <section class="work-section portfolio-three" id="work">
     <div class="container">

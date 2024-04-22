@@ -68,11 +68,11 @@
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav ml-250">
                     <a class="nav-link" href="index.php#home">Home</a>
-                    <a class="nav-link" href="index.php#about">About Us</a>
+                    <a class="nav-link" href="index.php#about">About</a>
                     <a class="nav-link" href="index.php#work">Projects</a>
                     <a class="nav-link" href="index.php#news">Blog</a>
                     <a class="nav-link" href="kolmena/news.php">Service</a>
-                    <a class="nav-link" href="index.php#contactus">Contact Us</a>
+                    <a class="nav-link" href="index.php#contactus">Contact</a>
                     <a class="nav-link active" href="home-page3.php">Product</a>
                 </div>
 
