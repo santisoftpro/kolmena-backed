@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Page Title -->
-    <title>MegaOne | Latest News</title>
+    <title>Service</title>
     <!-- Favicon -->
     <link rel="icon" href="../kolmena/img/favcon.png">
     <!-- Bundle -->
@@ -208,7 +208,7 @@
                                 <li><a class="a-recent" href="news.php#offgrid">Off-Grid Power System</a></li>
                                 <li><a class="a-recent" href="news.php#hybrid">Hybrid Power System</a></li>
                                 <li><a class="a-recent" href="news.php#heating">Flat Plate Solar Water Heater</a></li>
-                                <li><a class="a-recent" href="news.php#heating">Pico Power Sytem</a></li>
+                                <li><a class="a-recent" href="news.php#pico">Pico Power Sytem</a></li>
                             </ul>
                         </div>
                     </aside>
@@ -276,7 +276,7 @@
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
-                <h2>Tittle Here</h2>
+                <h2>Solar Water Heaters</h2>
                 <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p> -->
                 <!-- <a href = "#">Read More</a> -->
               </div>
@@ -290,7 +290,7 @@
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
-                <h2>Tittle Here</h2>
+                <h2>Solar Water Heater 200L</h2>
                 <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p> -->
                 <!-- <a href = "#">Read More</a> -->
               </div>
@@ -304,7 +304,7 @@
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
-                <h2>Tittle Here</h2>
+                <h2>Energy Saving Split Solar Water Heater</h2>
                 <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p> -->
                 <!-- <a href = "#">Read More</a> -->
               </div>

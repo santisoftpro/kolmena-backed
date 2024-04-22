@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Page Title -->
-    <title>MegaOne | Latest News</title>
+    <title>Service</title>
     <!-- Favicon -->
     <link rel="icon" href="../kolmena/img/favcon.png">
     <!-- Bundle -->
@@ -361,10 +361,30 @@
             </div>
             <div class="col-lg-6 pl-6 center-about">
                 
-                <h2 class="wow fadeInUp text-capitalize font-42" data-wow-delay="400ms">Pico Power Sytem</h2>
-                <p class="pt-3 wow fadeInUp about-p" data-wow-delay="500ms">Pico hydropower is the only form of small renewable energy production which works continuously without battery storage. Where applicable it is the most cost efficient solution to supply electrical energy. Pico turbines can provide power for small clusters or even single households
-Individual hydropower supply cuts out the efforts of organising a community. Identifying, planning and managing takes a higher proportion of the whole installation efforts as smaller a sites becomes. </p>
+                <h2 class="wow fadeInUp text-capitalize font-42" data-wow-delay="400ms">OFF-Grid Power System</h2>
+                <p class="pt-3 wow fadeInUp about-p" data-wow-delay="500ms">Off-Grid System Sizing Information: Off-grid solar PV systems, like the one shown in the diagram above, are one of the most economical ways to provide electricity in the absence of an electrical power grid. Off-grid systems are useful for remote homes and cabins, RVs and boats, and even for industrial applications like remote telemetry, cathodic protection, and telecommunications.
+
+The size of an off-grid solar electric system depends on the amount of power that is required (watts), the amount of time it is used (hours), and the amount of energy available from the sun in a particular area (sun-hours per day).</p>
             
+                <a href="../home-page3.php#product" class="btn btn-rounded btn-large btn btn-green-orange text-capitalize mt-30">Buy Products</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- off grid end -->
+<!--off grid section-->
+<section class="about bg-light" id="pico">
+    <h2 class="d-none">heading</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pr-5 wow fadeInLeft">
+                <div class="rare-box"></div>
+                <img src="new-image/Pasted image 19.png" class="image-about position-relative w-100" alt="">
+            </div>
+            <div class="col-lg-6 pl-6 center-about">
+                
+                <h2 class="wow fadeInUp text-capitalize font-42" data-wow-delay="400ms">Pico Power Sytem</h2>
+                <p class="pt-3 wow fadeInUp about-p" data-wow-delay="500ms"> The “Micro Hydropower System” developed by kolmena Group., is a type of hydroelectric system that can produce a few kW to 1 MW of electricity. Until now, the company has installed hydropower plants with a maximum capacity of 49.9kW, and they are now working on a project with a maximum capacity of 420kW. The technology can produce electricity using small streams as main resource for power generation.</p>
                 <a href="../home-page3.php#product" class="btn btn-rounded btn-large btn btn-green-orange text-capitalize mt-30">Buy Products</a>
             </div>
         </div>
