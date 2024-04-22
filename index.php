@@ -1122,7 +1122,9 @@
                 </div>
             </div>
             <div class="col-md-6 p-0">
-                <div id="google-map" class="bg-light-gray map"></div>
+                <div id="google-map" class="bg-light-gray">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.516091825532!2d30.125651875095514!3d-1.9465078980358463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca71759b7aa45%3A0x2cde50a29ad17c85!2sKG%2011%20Ave%2C%20Kigali!5e0!3m2!1sen!2srw!4v1713794701527!5m2!1sen!2srw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
             </div>
         </div>
