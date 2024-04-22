@@ -246,7 +246,7 @@ session_start();
             </div>
         </div>
         <div class="spaces"></div>
-        <div class="row scroll" id="product">
+        <div class="row" id="product">
             <div class="col-md-12">
                 <p class="accessories-tittle ">All Products</p>
             </div>
