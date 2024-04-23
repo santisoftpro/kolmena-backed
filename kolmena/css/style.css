@@ -563,7 +563,7 @@ h6{
     position: absolute;
     top: 0;
     z-index: 99;
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 90px;
     width: 100%;
     -webkit-transition: all .1s ease;

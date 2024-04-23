@@ -34,6 +34,38 @@
     <link rel="stylesheet" href="assets/css/singleproduct.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" /> -->
 </head>
+<style>
+  /* Adjust z-index and positioning for the dropdown menu */
+  /* Style for the sub-dropdown menu */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block;
+}
+
+
+</style>
 <body data-spy="scroll" data-target=".navbar" data-offset="90" class="position-relative">
 
 <!--Preloader-->
@@ -65,19 +97,50 @@
             </a>
 
             <!--Nav Links-->
-            <div class="collapse navbar-collapse">
-                <div class="navbar-nav ml-250">
-                    <a class="nav-link" href="index.php#home">Home</a>
-                    <a class="nav-link" href="index.php#about">About</a>
-                    <a class="nav-link" href="index.php#work">Projects</a>
-                    <a class="nav-link" href="index.php#news">Blog</a>
-                    <a class="nav-link" href="kolmena/news.php">Service</a>
-                    <a class="nav-link" href="index.php#contactus">Contact</a>
-                    <a class="nav-link active" href="home-page3.php">Product</a>
+<!--Nav Links-->
+<div class="collapse navbar-collapse">
+    <div class="navbar-nav ml-250">
+        <a class="nav-link" href="index.php">Home</a>
+        <a class="nav-link" href="index.php#about">About</a>
+        <a class="nav-link" href="index.php#work">Projects</a>
+        <a class="nav-link" href="index.php#news">Blog</a>
+        <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Service
+            </a>
+            <div class="dropdown-menu" aria-labelledby="serviceDropdown">
+                <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="subDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Flat Plate Solar Water Heater
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="subDropdown">
+                        <a class="dropdown-item" href="#">On-Grid Power System</a>
+                        <a class="dropdown-item" href="#">Off-Grid Power System</a>
+                      
+                        <!-- Add more submenu items as needed -->
+                    </div>
                 </div>
-
+                <div class="dropdown-divider"></div> 
+                <div class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="subDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Evacuated Tube Collector
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="subDropdown">
+                        <a class="dropdown-item" href="#">Hybrid Power System</a>
+                        <a class="dropdown-item" href="#">Pico Power Sytem</a>
+                        <!-- Add more submenu items as needed -->
+                    </div>
+                </div>
+                
+                <!-- Add more dropdown items as needed -->
             </div>
-            <!--Side Menu Button-->
+        </div>
+        <a class="nav-link" href="index.php#contactus">Contact</a>
+        <a class="nav-link active" href="home-page3.php">Product</a>
+    </div>
+</div>
+
+<!--Side Menu Button-->
             <a href="javascript:void(0)" class="parallax-btn sidemenu_btn" id="sidemenu_toggle">
                 <div class="animated-wrap sidemenu_btn_inner">
                     <div class="animated-element">
