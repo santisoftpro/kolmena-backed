@@ -324,12 +324,10 @@
             <div class="col-md-12">
                 <div class="footer-social">
                     <ul class="list-unstyled text-white">
-                        <li><a class="wow fadeInUp facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                        <li><a class="wow fadeInDown twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a class="wow fadeInUp google-bg-hvr" href="javascript:void(0);"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
-                        <li><a class="wow fadeInDown linkedin-bg-hvr" href="javascript:void(0);"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                        <li><a class="wow fadeInUp instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a class="wow fadeInDown mail-bg-hvr" href="javascript:void(0);"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                         <li><a class="wow fadeInUp facebook-bg-hvr" href="https://www.facebook.com/p/Kolmena-Group-100086357093029/"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a class="wow fadeInDown twitter-bg-hvr" href="https://twitter.com/kolmenaltd"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a class="wow fadeInDown linkedin-bg-hvr" href="https://www.linkedin.com/company/kolmena-group-ltd"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li><a class="wow fadeInUp instagram-bg-hvr" href="https://www.instagram.com/kolmenagroup/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
                 <p class="company-about fadeIn text-capitalize">&copy; 2023 Megaone. Made With Love By <a href="javascript:void(0);">Themesindustry</a></p>

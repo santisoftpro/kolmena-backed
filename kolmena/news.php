@@ -243,7 +243,7 @@
             <div class = "blog-item">
               <div class = "blog-img">
                 <img src = "new-image/Pasted image 4.png" alt = "">
-                <span><i class = "far fa-heart"></i></span>
+               
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
@@ -257,7 +257,7 @@
             <div class = "blog-item">
               <div class = "blog-img">
                 <img src = "new-image/Pasted image 5.png" alt = "">
-                <span><i class = "far fa-heart"></i></span>
+               
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
@@ -271,7 +271,7 @@
             <div class = "blog-item">
               <div class = "blog-img">
                 <img src = "new-image/Pasted image 6.png" alt = "">
-                <span><i class = "far fa-heart"></i></span>
+               
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
@@ -285,7 +285,7 @@
             <div class = "blog-item">
               <div class = "blog-img">
                 <img src = "new-image/Pasted image 7.png" alt = "">
-                <span><i class = "far fa-heart"></i></span>
+                
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
@@ -299,7 +299,7 @@
             <div class = "blog-item">
               <div class = "blog-img">
                 <img src = "new-image/Pasted image 8.png" alt = "">
-                <span><i class = "far fa-heart"></i></span>
+               
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
@@ -313,7 +313,7 @@
             <div class = "blog-item">
               <div class = "blog-img">
                 <img src = "new-image/Pasted image 9.png" alt = "">
-                <span><i class = "far fa-heart"></i></span>
+                
               </div>
               <div class = "blog-text">
                 <!-- <span>20 January, 2020</span> -->
@@ -364,7 +364,7 @@
                 <h2 class="wow fadeInUp text-capitalize font-42" data-wow-delay="400ms">OFF-Grid Power System</h2>
                 <p class="pt-3 wow fadeInUp about-p" data-wow-delay="500ms">Off-Grid System Sizing Information: Off-grid solar PV systems, like the one shown in the diagram above, are one of the most economical ways to provide electricity in the absence of an electrical power grid. Off-grid systems are useful for remote homes and cabins, RVs and boats, and even for industrial applications like remote telemetry, cathodic protection, and telecommunications.
 
-The size of an off-grid solar electric system depends on the amount of power that is required (watts), the amount of time it is used (hours), and the amount of energy available from the sun in a particular area (sun-hours per day).</p>
+          The size of an off-grid solar electric system depends on the amount of power that is required (watts), the amount of time it is used (hours), and the amount of energy available from the sun in a particular area (sun-hours per day).</p>
             
                 <a href="../home-page3.php#product" class="btn btn-rounded btn-large btn btn-green-orange text-capitalize mt-30">Buy Products</a>
             </div>
@@ -399,12 +399,10 @@ The size of an off-grid solar electric system depends on the amount of power tha
             <div class="col-md-12">
                 <div class="footer-social">
                     <ul class="list-unstyled text-white">
-                        <li><a class="wow fadeInUp facebook-bg-hvr" href="javascript:void(0);"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                        <li><a class="wow fadeInDown twitter-bg-hvr" href="javascript:void(0);"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a class="wow fadeInUp google-bg-hvr" href="javascript:void(0);"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
-                        <li><a class="wow fadeInDown linkedin-bg-hvr" href="javascript:void(0);"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                        <li><a class="wow fadeInUp instagram-bg-hvr" href="javascript:void(0);"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a class="wow fadeInDown mail-bg-hvr" href="javascript:void(0);"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a class="wow fadeInUp facebook-bg-hvr" href="https://www.facebook.com/p/Kolmena-Group-100086357093029/"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                        <li><a class="wow fadeInDown twitter-bg-hvr" href="https://twitter.com/kolmenaltd"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a class="wow fadeInDown linkedin-bg-hvr" href="https://www.linkedin.com/company/kolmena-group-ltd"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                        <li><a class="wow fadeInUp instagram-bg-hvr" href="https://www.instagram.com/kolmenagroup/"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
                 <p class="company-about fadeIn text-capitalize">&copy; 2024 kolmena Group ltd. Made With Love By <a href="javascript:void(0);">Inetworka ltd</a></p>
