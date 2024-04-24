@@ -1207,7 +1207,7 @@
         </div>
 
         <!--contact us-->
-        <form class="contact-form" id="contact-form-data">
+        <form action="" class="contact-form" id="" method="post">
             <div class="row">
 
                 <div class="col-sm-12" id="result"></div>
@@ -1238,10 +1238,53 @@
                     </div>
                 </div>
                 <div class="col-sm-12">
-                    <button type="button" class="btn btn-rounded btn-large btn-green-orange mt-30 contact_btn" id="submit_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i> <span class="text-capitalize">Contact Now</span></button>
+                    <button type="submit" class="btn btn-rounded btn-large btn-green-orange mt-30" id="" name="contactSend">Contact Now</button>
                 </div>
             </div>
         </form>
+        <?php
+if(isset($_POST['contactSend'])) {
+    // Include the database connection file
+    include './admin/mysqli/db.php';
+
+    // Validate and sanitize input data
+    $firstName = mysqli_real_escape_string($conn, $_POST['firstName']);
+    $lastName = mysqli_real_escape_string($conn, $_POST['lastName']);
+    $email = mysqli_real_escape_string($conn, $_POST['userEmail']);
+    $phone = mysqli_real_escape_string($conn, $_POST['userPhone']);
+    $message = mysqli_real_escape_string($conn, $_POST['userMessage']);
+
+    // Check if required fields are not empty
+    if (!empty($firstName) && !empty($email) && !empty($message)) {
+        // SQL query with prepared statement
+        $sql = "INSERT INTO `contact`(`firstName`, `lastName`, `email`, `phone`, `msg`) VALUES (?, ?, ?, ?, ?)";
+        $stmt = mysqli_stmt_init($conn);
+        if (mysqli_stmt_prepare($stmt, $sql)) {
+            // Bind parameters to the prepared statement
+            mysqli_stmt_bind_param($stmt, "sssss", $firstName, $lastName, $email, $phone, $message);
+            
+            // Execute the prepared statement
+            if (mysqli_stmt_execute($stmt)) {
+                $message = 'Thank you for contacting us!';
+            } else {
+                $message = 'Error: ' . mysqli_stmt_error($stmt);
+            }
+        } else {
+            $message = 'Error: Unable to prepare statement';
+        }
+
+        // Close the statement and database connection
+        mysqli_stmt_close($stmt);
+        mysqli_close($conn);
+    } else {
+        $message = 'Please fill in all required fields.';
+    }
+    
+    // Display the message in HTML
+    echo "<script>alert('$message');</script>";
+}
+?>
+
     </div>
 </section>
 <!--Form End-->
