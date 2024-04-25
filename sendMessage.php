@@ -11,7 +11,8 @@ if(isset($_POST['contactSend'])) {
     $email = mysqli_real_escape_string($conn, $_POST['userEmail']);
     $phone = mysqli_real_escape_string($conn, $_POST['userPhone']);
     $message = mysqli_real_escape_string($conn, $_POST['userMessage']);
-
+    $response = 'Customer';
+    $msges = 'Customer Name is '.$firstName.' '.$lastName. ' : '.$message;
     // Check if required fields are not empty
     if (!empty($firstName) && !empty($email) && !empty($message)) {
         // SQL query with prepared statement
@@ -24,9 +25,11 @@ if(isset($_POST['contactSend'])) {
             // Execute the prepared statement
             if (mysqli_stmt_execute($stmt)) {
                 $message = 'Thank you for contacting us!';
-                echo smtp_mailer($email, $response, $e_message);
+                echo smtp_mailer($email, $response, $msges);
+                header("Location: index.php#contactus");
             } else {
                 $message = 'Error: ' . mysqli_stmt_error($stmt);
+                
             }
         } else {
             $message = 'Error: Unable to prepare statement';
@@ -41,9 +44,8 @@ if(isset($_POST['contactSend'])) {
     
     // Display the message in HTML
     echo "<script>alert('$message');</script>";
-    header("Location: index.php#contactus");
+    
 }
-
 
 function smtp_mailer($to, $subject, $msg)
 {
@@ -62,7 +64,7 @@ function smtp_mailer($to, $subject, $msg)
     // $mail->SetFrom("");
     $mail->setFrom('andrewellicky97@gmail.com', 'Kolmena Group');
     $mail->Subject = $subject;
-    $mail->Body = 'greeting!! ' . $msg;
+    $mail->Body = $msg;
     $mail->AddAddress($to);
     $mail->SMTPOptions = array(
         'ssl' => array(

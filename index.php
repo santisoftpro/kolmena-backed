@@ -1207,7 +1207,7 @@
         </div>
 
         <!--contact us-->
-        <form action="" class="contact-form" id="" method="post">
+        <form action="sendMessage.php" class="contact-form" id="" method="post">
             <div class="row">
 
                 <div class="col-sm-12" id="result"></div>
