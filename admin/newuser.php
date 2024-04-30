@@ -63,23 +63,14 @@ include_once './include_pages/header.php'
 <li><a href="userlists.php">Users List</a></li>
 </ul>
 </li>
-<li class="submenu">
-<a href="javascript:void(0);"><img src="assets/img/icons/settings.svg" alt="img"><span> Settings</span> <span class="menu-arrow"></span></a>
-<ul>
-<li><a href="generalsettings.php">General Settings</a></li>
-<li><a href="emailsettings.php">Email Settings</a></li>
- <li><a href="paymentsettings.php">Payment Settings</a></li>
-<li><a href="currencysettings.html">Currency Settings</a></li>
-<li><a href="grouppermissions.html">Group Permissions</a></li>
-<li><a href="taxrates.html">Tax Rates</a></li>
-</ul>
-</li>
+
 </ul>
 </div>
 </div>
 </div>
 
 <div class="page-wrapper">
+ <form action="" method="post">
 <div class="content">
 <div class="page-header">
 <div class="page-title">
@@ -93,54 +84,36 @@ include_once './include_pages/header.php'
 <div class="row">
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
-<label>User Name</label>
-<input type="text">
+<label>Full Name</label>
+<input type="text" name="name">
 </div>
 <div class="form-group">
 <label>Email</label>
-<input type="text">
+<input type="text" name="email">
 </div>
-<div class="form-group">
-<label>Password</label>
-<div class="pass-group">
-<input type="password" class=" pass-input">
-<span class="fas toggle-password fa-eye-slash"></span>
-</div>
-</div>
+
 </div>
 <div class="col-lg-3 col-sm-6 col-12">
 <div class="form-group">
 <label>Mobile</label>
-<input type="text">
+<input type="text" name="phone">
 </div>
 <div class="form-group">
-<label>Role</label>
-<select class="select">
-<option>Select</option>
-<option>Role</option>
-<option>Role1</option>
-</select>
+<label>Password</label>
+<div class="pass-group">
+<input type="password" class="pass-input" name="rpassword">
+<span class="fas toggle-password fa-eye-slash"></span>
+</div>
 </div>
 <div class="form-group">
 <label>Confirm Password</label>
 <div class="pass-group">
-<input type="password" class=" pass-inputs">
+<input type="password" class="pass-inputs" name="pass">
 <span class="fas toggle-passworda fa-eye-slash"></span>
 </div>
 </div>
 </div>
-<div class="col-lg-3 col-sm-6 col-12">
-<div class="form-group">
-<label> Profile Picture</label>
-<div class="image-upload image-upload-new">
-<input type="file">
-<div class="image-uploads">
-<img src="assets/img/icons/upload.svg" alt="img">
-<h4>Drag and drop a file to upload</h4>
-</div>
-</div>
-</div>
-</div>
+
 <div class="col-lg-12">
 <a href="javascript:void(0);" class="btn btn-submit me-2">Submit</a>
 <a href="javascript:void(0);" class="btn btn-cancel">Cancel</a>
@@ -150,6 +123,7 @@ include_once './include_pages/header.php'
 </div>
 
 </div>
+</form>
 </div>
 </div>
 
@@ -171,5 +145,6 @@ include_once './include_pages/header.php'
 <script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>
 
 <script src="assets/js/script.js"></script>
+<script src="assets/js/dynamic/user.js"></script>
 </body>
 </html>

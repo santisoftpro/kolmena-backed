@@ -88,4 +88,13 @@ class User extends Database {
 
 
     }
+
+
+    public function registerFromAdmin($name, $email, $password, $phone) {
+        $sql = "INSERT INTO user (fullName,email,password,phone) VALUES(:name,:email,:password,:phone)";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute(['name'=>$name,'email'=>$email,'password'=>$password,'phone'=>$phone]);
+        return true;
+    
+   }
 }

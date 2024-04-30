@@ -1,11 +1,3 @@
-<?php
- session_start();
- if (!isset($_SESSION["user"])) {
-    header("Location: index.php");
-}
-require_once './mysqli/db.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +7,7 @@ require_once './mysqli/db.php';
 <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, invoice, html5, responsive, Projects">
 <meta name="author" content="Dreamguys - Bootstrap Admin Template">
 <meta name="robots" content="noindex, nofollow">
-<title>Dreams Pos admin template</title>
+<title>Admin Panel</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.jpg">
 
@@ -24,6 +16,8 @@ require_once './mysqli/db.php';
 <link rel="stylesheet" href="assets/css/animate.css">
 
 <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
 
 <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
 
@@ -43,7 +37,6 @@ require_once './mysqli/db.php';
 include_once './include_pages/header.php'
 ?>
 <!-- end of header function -->
-<!-- sidebar -->
 
 <div class="sidebar" id="sidebar">
 <div class="sidebar-inner slimscroll">
@@ -55,54 +48,36 @@ include_once './include_pages/header.php'
 <li class="submenu">
 <a href="javascript:void(0);"><img src="assets/img/icons/product.svg" alt="img"><span> Product</span> <span class="menu-arrow"></span></a>
 <ul>
-<li><a href="productlist.php" class="active">Product List</a></li>
+<li><a href="productlist.php">Product List</a></li>
 <li><a href="addproduct.php">Add Product</a></li>
-<!-- <li><a href="categorylist.html">Category List</a></li>
-<li><a href="addcategory.html">Add Category</a></li> -->
 </ul>
 </li>
+
+
+
 <li class="submenu">
 <a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img"><span> Messages</span> <span class="menu-arrow"></span></a>
 <ul>
 
-<li><a href="customer.php" class="">Messages List</a></li>
+<li><a href="customer.php" class="active">Messages List</a></li>
 </ul>
 </li>
 
-<!-- <li class="submenu">
-<a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img"><span> Users</span> <span class="menu-arrow"></span></a>
-<ul>
-<li><a href="newuser.html">New User </a></li>
-<li><a href="userlists.html">Users List</a></li>
-</ul>
-</li>
-<li class="submenu">
-<a href="javascript:void(0);"><img src="assets/img/icons/settings.svg" alt="img"><span> Settings</span> <span class="menu-arrow"></span></a>
-<ul>
-<li><a href="generalsettings.html">General Settings</a></li>
-<li><a href="emailsettings.html">Email Settings</a></li>
- <li><a href="paymentsettings.html">Payment Settings</a></li>
-<li><a href="currencysettings.html">Currency Settings</a></li>
-<li><a href="grouppermissions.html">Group Permissions</a></li>
-<li><a href="taxrates.html">Tax Rates</a></li>
-</ul>
-</li> -->
 </ul>
 </div>
 </div>
 </div>
 
-<!-- end sidebar -->
 <div class="page-wrapper">
 <div class="content">
 <div class="page-header">
 <div class="page-title">
-<h4>Product List</h4>
-<h6>Manage your products</h6>
+<h4>User List</h4>
+<h6>Manage your User</h6>
 </div>
-<div class="page-btn">
-<a href="addproduct.php" class="btn btn-added"><img src="assets/img/icons/plus.svg" alt="img" class="me-1">Add New Product</a>
-</div>
+<!-- <div class="page-btn">
+<a href="newuser.html" class="btn btn-added"><img src="assets/img/icons/plus.svg" alt="img">Add User</a>
+</div> -->
 </div>
 
 <div class="card">
@@ -134,58 +109,40 @@ include_once './include_pages/header.php'
 </div>
 </div>
 
-<div class="card mb-0" id="filter_inputs">
+<div class="card" id="filter_inputs">
 <div class="card-body pb-0">
 <div class="row">
-<div class="col-lg-12 col-sm-12">
-<div class="row">
-<div class="col-lg col-sm-6 col-12">
+<div class="col-lg-2 col-sm-6 col-12">
+<div class="form-group">
+<input type="text" placeholder="Enter User Name">
+</div>
+</div>
+<div class="col-lg-2 col-sm-6 col-12">
+<div class="form-group">
+<input type="text" placeholder="Enter Phone">
+</div>
+</div>
+<div class="col-lg-2 col-sm-6 col-12">
+<div class="form-group">
+<input type="text" placeholder="Enter Email">
+</div>
+</div>
+<div class="col-lg-2 col-sm-6 col-12">
+<div class="form-group">
+<input type="text" class="datetimepicker cal-icon" placeholder="Choose Date">
+</div>
+</div>
+<div class="col-lg-2 col-sm-6 col-12">
 <div class="form-group">
 <select class="select">
-<option>Choose Product</option>
-<option>Macbook pro</option>
-<option>Orange</option>
+<option>Disable</option>
+<option>Enable</option>
 </select>
 </div>
 </div>
-<div class="col-lg col-sm-6 col-12">
-<div class="form-group">
-<select class="select">
-<option>Choose Category</option>
-<option>Computers</option>
-<option>Fruits</option>
-</select>
-</div>
-</div>
-<div class="col-lg col-sm-6 col-12">
-<div class="form-group">
-<select class="select">
-<option>Choose Sub Category</option>
-<option>Computer</option>
-</select>
-</div>
-</div>
-<div class="col-lg col-sm-6 col-12">
-<div class="form-group">
-<select class="select">
-<option>Brand</option>
-<option>N/D</option>
-</select>
-</div>
-</div>
-<div class="col-lg col-sm-6 col-12 ">
-<div class="form-group">
-<select class="select">
-<option>Price</option>
-<option>150.00</option>
-</select>
-</div>
-</div>
-<div class="col-lg-1 col-sm-6 col-12">
+<div class="col-lg-1 col-sm-6 col-12 ms-auto">
 <div class="form-group">
 <a class="btn btn-filters ms-auto"><img src="assets/img/icons/search-whites.svg" alt="img"></a>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -198,26 +155,22 @@ include_once './include_pages/header.php'
 <tr>
 <th>
 <label class="checkboxs">
-<input type="checkbox" id="select-all">
+<input type="checkbox">
 <span class="checkmarks"></span>
 </label>
 </th>
-<th>Product Name</th>
-<th>Category </th>
-<th>power</th>
-<th>price</th>
-<th>description</th>
-<th>Images</th>
+<th>Names </th>
+<th>Phone</th>
+ <th>email</th>
+<th>Message</th>
+<th>Created On</th>
 <th>Action</th>
 </tr>
 </thead>
-<?php
-
-?>
 <tbody>
 <?php
 include './mysqli/db.php';
-$sql =  "SELECT * FROM posts ORDER BY product_id DESC";
+$sql =  "SELECT * FROM contact ORDER BY created_date DESC";
 $result = mysqli_query($conn, $sql);
 foreach ($result as $row):
 
@@ -229,33 +182,26 @@ foreach ($result as $row):
 <span class="checkmarks"></span>
 </label>
 </td>
-<td><?= $row['productName'] ?></td>
-<td><?= $row['category'] ?></td>
-<td><?= $row['power'] ?></td>
-<td><?= $row['price'] ?></td>
-<td><?= $row['description'] ?></td>
-<td class="productimgname">
-    <?php
-       foreach(json_decode($row['images']) as $image):
-    ?>
-    <a href="javascript:void(0);" class="product-img">
-    <img src="./assets/php/uploads/<?=$image; ?>" alt="product">
-    </a>
-    <?php endforeach; ?>
-</td>
+<td><?= $row['firstName'].' '. $row['lastName']?></td>
+<td><?= $row['phone'] ?></td>
+<td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fb8f9394969a88bb9e839a968b979ed5989496">[<?= $row['email'] ?>]</a> </td>
+<td><?= $row['msg'] ?> </td>
+<td><?= $row['created_date'] ?></td>
 <td>
-<a class="me-3" href="product-details.php">
-<img src="assets/img/icons/eye.svg" alt="img">
-</a>
-<a class="me-3" href="editproduct.php?id=<?=$row['product_id']?>">
+<a class="me-3" href="newuseredit.html">
 <img src="assets/img/icons/edit.svg" alt="img">
 </a>
-<a class="confirm-text" href="javascript:void(0);">
+<a class="me-3 confirm-text" href="javascript:void(0);">
 <img src="assets/img/icons/delete.svg" alt="img">
 </a>
 </td>
 </tr>
+
+
 <?php endforeach; ?>
+
+
+
 </tbody>
 </table>
 </div>
@@ -267,7 +213,8 @@ foreach ($result as $row):
 </div>
 
 
-<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.6.0.min.js"></script>
 
 <script src="assets/js/feather.min.js"></script>
 
@@ -279,6 +226,9 @@ foreach ($result as $row):
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 <script src="assets/plugins/select2/js/select2.min.js"></script>
+
+<script src="assets/js/moment.min.js"></script>
+<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
 
 <script src="assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
 <script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>

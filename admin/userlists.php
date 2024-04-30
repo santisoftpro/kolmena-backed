@@ -64,17 +64,7 @@ include_once './include_pages/header.php'
 <li><a href="userlists.php" class="active">Users List</a></li>
 </ul>
 </li>
-<li class="submenu">
-<a href="javascript:void(0);"><img src="assets/img/icons/settings.svg" alt="img"><span> Settings</span> <span class="menu-arrow"></span></a>
-<ul>
-<li><a href="generalsettings.php">General Settings</a></li>
-<li><a href="emailsettings.php">Email Settings</a></li>
- <li><a href="paymentsettings.php">Payment Settings</a></li>
-<li><a href="currencysettings.html">Currency Settings</a></li>
-<li><a href="grouppermissions.html">Group Permissions</a></li>
-<li><a href="taxrates.html">Tax Rates</a></li>
-</ul>
-</li>
+
 </ul>
 </div>
 </div>

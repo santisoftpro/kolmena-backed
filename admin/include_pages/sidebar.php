@@ -16,8 +16,6 @@
 </ul>
 </li>
 
-
-<!-- 
 <li class="submenu">
 <a href="javascript:void(0);"><img src="assets/img/icons/users1.svg" alt="img"><span> Users</span> <span class="menu-arrow"></span></a>
 <ul>
@@ -25,7 +23,7 @@
 <li><a href="userlists.php">Users List</a></li>
 </ul>
 </li>
-<li class="submenu">
+<!-- <li class="submenu">
 <a href="javascript:void(0);"><img src="assets/img/icons/settings.svg" alt="img"><span> Settings</span> <span class="menu-arrow"></span></a>
 <ul>
 <li><a href="generalsettings.php">General Settings</a></li>
@@ -35,7 +33,7 @@
 <li><a href="grouppermissions.html">Group Permissions</a></li>
 <li><a href="taxrates.html">Tax Rates</a></li>
 </ul>
-</li> -->
+</li>  -->
 </ul>
 </div>
 </div>
